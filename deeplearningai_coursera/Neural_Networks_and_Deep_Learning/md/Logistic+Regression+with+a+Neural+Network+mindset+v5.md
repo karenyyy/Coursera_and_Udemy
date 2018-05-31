@@ -67,7 +67,7 @@ print ("y = " + str(train_set_y[:, index]) + ", it's a '" + classes[np.squeeze(t
 
 
 
-![png](output_6_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_6_1.png)
 
 
 Many software bugs in deep learning come from having matrix/vector dimensions that don't fit. If you can keep your matrix/vector dimensions straight you will go a long way toward eliminating many bugs. 
@@ -197,7 +197,6 @@ train_set_x = train_set_x_flatten/255.
 test_set_x = test_set_x_flatten/255.
 ```
 
-<font color='blue'>
 **What you need to remember:**
 
 Common steps for pre-processing a new dataset are:
@@ -632,7 +631,6 @@ print ("predictions = " + str(predict(w, b, X)))
 </table>
 
 
-<font color='blue'>
 **What to remember:**
 You've implemented several functions that:
 - Initialize (w,b)
@@ -781,7 +779,7 @@ print ("y = " + str(test_set_y[0,index]) + ", you predicted that it is a \"" + c
 
 
 
-![png](output_44_2.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_44_2.png)
 
 
 Let's also plot the cost function and the gradients.
@@ -798,7 +796,7 @@ plt.show()
 ```
 
 
-![png](output_46_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_46_0.png)
 
 
 **Interpretation**:
@@ -902,7 +900,7 @@ plt.show()
 
 
 
-![png](output_50_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_50_1.png)
 
 
 **Interpretation**: 
@@ -914,7 +912,7 @@ plt.show()
     - If your model overfits, use other techniques to reduce overfitting. (We'll talk about this in later videos.) 
 
 
-<font color='blue'>
+
 **What to remember from this assignment:**
 1. Preprocessing the dataset is important.
 2. You implemented each function separately: initialize(), propagate(), optimize(). Then you built a model().
