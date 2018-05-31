@@ -8,11 +8,11 @@
 - Logistic network is practically a binary classification
 
 __Note: reshape each image as one single vector__
-![](../images/8.png)
-img<src="../images/8.png>
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/8.png)
+img<src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/8.png>
 - Notation:
 
-![](../images/9.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/9.png)
 
 $$\text{ Given the input feature x, where } x \in \mathbb{R}^{n_x}$$
 
@@ -83,7 +83,7 @@ $$J(w,b) = \frac{1}{m} \sum^m_{i=1} L(\hat y^{(i)}, y^{(i)}) = - \frac{1}{m} \su
 
 __Goal: find w, b that minimize J(w,b)__ 
 
-![](../images/10.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/10.png)
 
 __Initialization: for logistic regression__
 - almost any initialization method works (__usually init as 0__)
@@ -92,12 +92,12 @@ __Initialization: for logistic regression__
 __How Gradient Descent works?__
 - start at the initial point and then takes a step in the steepest downhill direction
 
-![](../images/11.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/11.png)
 
 $$\text{Repeated: } w=w-\alpha \frac{\partial J(w, b)}{\partial w},b=b-\alpha \frac{\partial J(w, b)}{\partial b}$$
 
 Eg: 
-![](../images/12.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/12.png)
 
 - at this point, the slope here of the derivative would be negative 
 - so the gradient descent update would subtract alpha times a negative number, ending up slowly __increasing w__
@@ -107,14 +107,14 @@ Eg:
 ### Logistic Regression Gradient Descent
 
 - Computing derivatives
-![](../images/13.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/13.png)
 
-![](../images/15.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/15.png)
 
 - GD on m examples
     - pseudo code:
     
-![](../images/14.png)   
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/14.png)   
 
 But, here, if there are too many features (when n not equal to 2), then to avoid the many for loops, should use vectorization.
 
@@ -122,7 +122,7 @@ But, here, if there are too many features (when n not equal to 2), then to avoid
 
 Vectorization is the art of getting rid of explicit folders in your code.
 
-![](../images/16.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/16.png)
 
 Test:
 
@@ -175,13 +175,13 @@ if you use a built-in function such as the __np.dot__ function, or any else that
 
 ### __Take-away: Avoid explicit for-loops__
 
-![](../images/17.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/17.png)
 
 > A subtlety in python: here b is a real number (1 x 1 matrix), python automatically takes this real number B and expands it out to in this case, a 1 x M row vector, it is called __Broadcasting__ in python.
 
 - Vectorizing Logistic Regression
-![](../images/18.png)
-![](../images/19.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/18.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/19.png)
 
 
 ```python
@@ -212,7 +212,7 @@ A.sum(axis=1) # left to right sum
 
 
 
-![](../images/20.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/20.png)
 
 
 ```python
@@ -260,7 +260,7 @@ A/cal * 100
 
 ### MLE & Neg Log Likelihood
 
-![](../images/21.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/21.png)
 
 > assumption: 
 
@@ -270,13 +270,13 @@ $$P(\text{ labels in training set }) = \prod_{i=1}^m P(y^{(i)} \mid x^{(i)})$$
 
 $$\log P(\text{ labels in training set }) = \log \prod_{i=1}^m P(y^{(i)} \mid x^{(i)})$$
 
-$$\log P(\text{ labels in training set }) = \sum^{m}_{i=1} \log P(y^{(i)} \mid x^{(i)}) = \sum^{m}_{i=1} [-L(\hat y^{(i)}, y^{(i)})]$$
+$$\log P(\text{ labels in training set }) = \sum^{m}_{i=1} \log P(y^{(i)} \mid x^{(i)}) = \sum^{m}_{i=1} (-L(\hat y^{(i)}, y^{(i)}))$$
 
 $$\text{ Neg Log Likelihood : } L(\hat y^{(i)}, y^{(i)})$$
 
 > MLE here: 
 
-$$\max (\log P(\text{ labels in training set })) = \max \sum^{m}_{i=1} \log P(y^{(i)} \mid x^{(i)}) = \max \sum^{m}_{i=1} [-L(\hat y^{(i)}, y^{(i)})]$$
+$$\max (\log P(\text{ labels in training set })) = \max \sum^{m}_{i=1} \log P(y^{(i)} \mid x^{(i)}) = \max \sum^{m}_{i=1} (-L(\hat y^{(i)}, y^{(i)}))$$
 
 
 $$=> \min \sum^{m}_{i=1} L(\hat y^{(i)}, y^{(i)})$$
