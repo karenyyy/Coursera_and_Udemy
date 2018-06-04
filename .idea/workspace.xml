@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/cs231+cs229 basic NN.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/cs231n+cs229 basic classifier.ipynb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Building your Deep Neural Network - Step by Step-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Logistic Regression with a Neural Network mindset-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Planar data classification with one hidden layer-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Deep Neural Network - Application.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Logistic Regression with a Neural Network mindset.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Planar data classification with one hidden layer.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 1 Quiz - Introduction to deep learning.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 2 Quiz - Neural Network Basics.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 3 Quiz - Shallow Neural Networks.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 4 Quiz - Key concepts on Deep Neural Networks.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/2layerNN_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/LlayerNN_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/LogReg_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/backprop_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/classification_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/final outline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/grad_summary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/imvectorkiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/linearback_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/mn_backward.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/model_architecture_kiank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/my_image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/sgd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/sgd_bad.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,12 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
+      <file leaf-file-name="Deep+Neural+Network+-+Application+v8.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
+              <first_editor relative-caret-position="241">
+                <caret line="246" column="4" lean-forward="false" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -90,11 +111,13 @@
       <find>init</find>
       <find>def</find>
       <find>blue</find>
+      <find>output_</find>
       <find>### [SE].*</find>
       <find>\.\./</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
+      <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week4/output_</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/</replace>
     </replaceStrings>
   </component>
@@ -113,6 +136,8 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" />
       </list>
     </option>
   </component>
@@ -150,6 +175,32 @@
             <path>
               <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="big_data_coursera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="big_data_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Intro_to_big_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="big_data_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Intro_to_big_data" type="462c0819:PsiDirectoryNode" />
+              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="big_data_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Intro_to_big_data" type="462c0819:PsiDirectoryNode" />
+              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
+              <item name="week1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +293,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25111607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16979167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -360,6 +411,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="14" column="50" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1147" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -371,11 +433,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
+          <first_editor relative-caret-position="241">
+            <caret line="246" column="4" lean-forward="false" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />

@@ -73,7 +73,7 @@ To build your neural network, you will be implementing several "helper functions
     - Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function
 - Finally update the parameters.
 
-<img src="../images/final outline.png" style="width:800px;height:500px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/final outline.png" style="width:800px;height:500px;">
 <caption><center> **Figure 1**</center></caption><br>
 
 
@@ -113,12 +113,12 @@ def initialize_parameters(n_x, n_h, n_y):
     
     np.random.seed(1)
     
-    ### START CODE HERE ### (≈ 4 lines of code)
+    
     W1 = np.random.randn(n_h, n_x)*0.01
     b1 = np.zeros((n_h, 1))
     W2 = np.random.randn(n_y, n_h)*0.01
     b2 = np.zeros((n_y, 1))
-    ### END CODE HERE ###
+    
     
     assert(W1.shape == (n_h, n_x))
     assert(b1.shape == (n_h, 1))
@@ -294,10 +294,10 @@ def initialize_parameters_deep(layer_dims):
     L = len(layer_dims)            # number of layers in the network
 
     for l in range(1, L):
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         parameters['W' + str(l)] = np.random.randn(layer_dims[l], layer_dims[l-1]) * 0.01
         parameters['b' + str(l)] = np.zeros((layer_dims[l], 1))
-        ### END CODE HERE ###
+        
         
         assert(parameters['W' + str(l)].shape == (layer_dims[l], layer_dims[l-1]))
         assert(parameters['b' + str(l)].shape == (layer_dims[l], 1))
@@ -404,9 +404,9 @@ def linear_forward(A, W, b):
     cache -- a python dictionary containing "A", "W" and "b" ; stored for computing the backward pass efficiently
     """
     
-    ### START CODE HERE ### (≈ 1 line of code)
+    
     Z = np.dot(W,A)+b
-    ### END CODE HERE ###
+    
     
     assert(Z.shape == (W.shape[0], A.shape[1]))
     cache = (A, W, b)
@@ -476,17 +476,17 @@ def linear_activation_forward(A_prev, W, b, activation):
     
     if activation == "sigmoid":
         # Inputs: "A_prev, W, b". Outputs: "A, activation_cache".
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         Z, linear_cache = linear_forward(A_prev, W, b)
         A, activation_cache = sigmoid(Z)
-        ### END CODE HERE ###
+        
     
     elif activation == "relu":
         # Inputs: "A_prev, W, b". Outputs: "A, activation_cache".
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         Z, linear_cache = linear_forward(A_prev, W, b)
         A, activation_cache = relu(Z)
-        ### END CODE HERE ###
+        
     
     assert (A.shape == (W.shape[0], A_prev.shape[1]))
     cache = (linear_cache, activation_cache)
@@ -566,16 +566,16 @@ def L_model_forward(X, parameters):
     # Implement [LINEAR -> RELU]*(L-1). Add "cache" to the "caches" list.
     for l in range(1, L):
         A_prev = A 
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         A, cache = linear_activation_forward(A_prev, parameters["W"+str(l)], parameters["b"+str(l)], activation = "relu")
         caches.append(cache)
-        ### END CODE HERE ###
+        
     
     # Implement LINEAR -> SIGMOID. Add "cache" to the "caches" list.
-    ### START CODE HERE ### (≈ 2 lines of code)
+    
     AL, cache = linear_activation_forward(A, parameters["W"+str(L)], parameters["b"+str(L)], activation = "sigmoid")
     caches.append(cache)
-    ### END CODE HERE ###
+    
     
     assert(AL.shape == (1,X.shape[1]))
             
@@ -633,9 +633,9 @@ def compute_cost(AL, Y):
     m = Y.shape[1]
 
     # Compute loss from aL and y.
-    ### START CODE HERE ### (≈ 1 lines of code)
+    
     cost = -np.sum(Y*np.log(AL)+(1-Y)*np.log(1-AL))/m
-    ### END CODE HERE ###
+    
     
     cost = np.squeeze(cost)      # To make sure your cost's shape is what we expect (e.g. this turns [[17]] into 17).
     assert(cost.shape == ())
@@ -668,7 +668,7 @@ print("cost = " + str(compute_cost(AL, Y)))
 Just like with forward propagation, you will implement helper functions for backpropagation. Remember that back propagation is used to calculate the gradient of the loss function with respect to the parameters. 
 
 **Reminder**: 
-<img src="../images/backprop_kiank.png" style="width:650px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/backprop_kiank.png" style="width:650px;height:250px;">
 <caption><center> **Figure 3** : Forward and Backward propagation for *LINEAR->RELU->LINEAR->SIGMOID* <br> *The purple blocks represent the forward propagation, and the red blocks represent the backward propagation.*  </center></caption>
 
 <!-- 
@@ -694,7 +694,7 @@ For layer $l$, the linear part is: $Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$ (foll
 
 Suppose you have already calculated the derivative $dZ^{[l]} = \frac{\partial \mathcal{L} }{\partial Z^{[l]}}$. You want to get $(dW^{[l]}, db^{[l]} dA^{[l-1]})$.
 
-<img src="../images/linearback_kiank.png" style="width:250px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/linearback_kiank.png" style="width:250px;height:300px;">
 <caption><center> **Figure 4** </center></caption>
 
 The three outputs $(dW^{[l]}, db^{[l]}, dA^{[l]})$ are computed using the input $dZ^{[l]}$.Here are the formulas you need:
@@ -725,11 +725,11 @@ def linear_backward(dZ, cache):
     A_prev, W, b = cache
     m = A_prev.shape[1]
 
-    ### START CODE HERE ### (≈ 3 lines of code)
+    
     dW = np.dot(dZ, A_prev.T)/m
     db = np.sum(dZ, axis=1, keepdims=True)/m
     dA_prev = np.dot(W.T, dZ)
-    ### END CODE HERE ###
+    
     
     assert (dA_prev.shape == A_prev.shape)
     assert (dW.shape == W.shape)
@@ -823,16 +823,16 @@ def linear_activation_backward(dA, cache, activation):
     linear_cache, activation_cache = cache
     
     if activation == "relu":
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         dZ = relu_backward(dA, activation_cache)
         dA_prev, dW, db = linear_backward(dZ, linear_cache)
-        ### END CODE HERE ###
+        
         
     elif activation == "sigmoid":
-        ### START CODE HERE ### (≈ 2 lines of code)
+        
         dZ = sigmoid_backward(dA, activation_cache)
         dA_prev, dW, db = linear_backward(dZ, linear_cache)
-        ### END CODE HERE ###
+        
     
     return dA_prev, dW, db
 ```
@@ -922,7 +922,7 @@ print ("db = " + str(db))
 Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $L$. On each step, you will use the cached values for layer $l$ to backpropagate through layer $l$. Figure 5 below shows the backward pass. 
 
 
-<img src="../images/mn_backward.png" style="width:450px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/mn_backward.png" style="width:450px;height:300px;">
 <caption><center>  **Figure 5** : Backward pass  </center></caption>
 
 ** Initializing backpropagation**:
@@ -968,27 +968,27 @@ def L_model_backward(AL, Y, caches):
     Y = Y.reshape(AL.shape) # after this line, Y is the same shape as AL
     
     # Initializing the backpropagation
-    ### START CODE HERE ### (1 line of code)
+    
     dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL))
-    ### END CODE HERE ###
+    
     
     # Lth layer (SIGMOID -> LINEAR) gradients. Inputs: "dAL, current_cache". Outputs: "grads["dAL-1"], grads["dWL"], grads["dbL"]
-    ### START CODE HERE ### (approx. 2 lines)
+    
     current_cache = caches[-1]
     grads["dA" + str(L-1)], grads["dW" + str(L)], grads["db" + str(L)] = linear_activation_backward(dAL, current_cache, activation = "sigmoid")
-    ### END CODE HERE ###
+    
     
     # Loop from l=L-2 to l=0
     for l in reversed(range(L-1)):
         # lth layer: (RELU -> LINEAR) gradients.
         # Inputs: "grads["dA" + str(l + 1)], current_cache". Outputs: "grads["dA" + str(l)] , grads["dW" + str(l + 1)] , grads["db" + str(l + 1)] 
-        ### START CODE HERE ### (approx. 5 lines)
+        
         current_cache = caches[l]
         dA_prev_temp, dW_temp, db_temp = linear_activation_backward(dAL, current_cache, activation = "sigmoid")
         grads["dA" + str(l)] = dA_prev_temp
         grads["dW" + str(l + 1)] = dW_temp
         grads["db" + str(l + 1)] = db_temp
-        ### END CODE HERE ###
+        
 
     return grads
 ```
@@ -1076,11 +1076,11 @@ def update_parameters(parameters, grads, learning_rate):
     L = len(parameters) // 2 # number of layers in the neural network
 
     # Update rule for each parameter. Use a for loop.
-    ### START CODE HERE ### (≈ 3 lines of code)
+    
     for l in range(L):
         parameters["W" + str(l+1)] = parameters["W" + str(l+1)] - learning_rate * grads["dW" + str(l+1)]
         parameters["b" + str(l+1)] = parameters["b" + str(l+1)] - learning_rate * grads["db" + str(l+1)]
-    ### END CODE HERE ###
+    
     return parameters
 ```
 
