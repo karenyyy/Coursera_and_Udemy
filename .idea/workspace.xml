@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Building your Deep Neural Network - Step by Step-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Logistic Regression with a Neural Network mindset-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/.ipynb_checkpoints/Planar data classification with one hidden layer-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Deep Neural Network - Application.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Logistic Regression with a Neural Network mindset.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Planar data classification with one hidden layer.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 1 Quiz - Introduction to deep learning.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 2 Quiz - Neural Network Basics.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 3 Quiz - Shallow Neural Networks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Week 4 Quiz - Key concepts on Deep Neural Networks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/2layerNN_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/LlayerNN_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/LogReg_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/backprop_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/classification_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/final outline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/grad_summary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/imvectorkiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/linearback_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/mn_backward.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/model_architecture_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/my_image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/sgd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/images/sgd_bad.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" />
-    </list>
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
