@@ -1,24 +1,24 @@
 
 ## Neural Network Representation
 
-![](../images/22.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/22.png)
 
 __Notes: the input layer does not count as an official layer(layer 0)__
 
-![](../images/23.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/23.png)
 
-![](../images/24.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/24.png)
 
 ### Further explanation of how the vectorization works: (__pay attention to how the shape changes!__)
 
-![](../images/25.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/25.png)
 
 
 
 ### Activation Function
 
 
-![](../images/26.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/26.png)
 - Seldom use sigmoid, only for binary classification
 - can use different activation function at different layers(hidden tanh, output sigmoid)
 
@@ -29,7 +29,7 @@ __Downside__:
 
 __RELU__
 
-![](../images/27.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/27.png)
 
 __Rule of thumbs when choosing activation function:__
 
@@ -39,7 +39,7 @@ __Rule of thumbs when choosing activation function:__
     
     
 __Summary__    
-![](../images/28.png)    
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/28.png)    
 
 
 ### Why does NN need a non-linear activation function
@@ -47,13 +47,13 @@ __Summary__
  
 if not, then you will end up with a linear function in the end. (__Exceptions: sometimes linear activation function could be used in the output layer(fully connected layer)__)
 
-![](../images/29.png) 
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/29.png) 
 
 
 
 ### Backpropagation
 
-![](../images/30.png) 
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/30.png) 
 
 > Here: 
 $$\text{since } \frac{\partial L}{\partial z} = \frac{\partial L}{\partial a}  \cdot \frac{\partial a}{\partial z}$$
@@ -64,23 +64,23 @@ $$\text{ and when } g(z) = \frac{1}{1+e^{-z}}, g'(z) = g(z)(1-g(z))$$
 
 $$\text{ so, } dz = da \cdot g'(z) = \frac{-y(1-a)+a(1-y)}{a(1-a)} \cdot [a(1-a)] $$
 
-![](../images/31.png) 
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/31.png) 
 
-![](../images/32.png) 
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/32.png) 
 
 ### Random initialization
 
-![](../images/33.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/33.png)
 
 __Symmetric Breaking Problem__
 
 Result: Each neuron in the __first hidden layer__ will perform the same computation. So even after multiple iterations of gradient descent each neuron in the layer will be computing the same thing as other neurons. (__want different hidden units computing different functions__)
 
-![](../images/34.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/34.png)
 
 
 __Note: Make sure w is small to _avoid gradient vanishing___
-![](../images/35.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/35.png)
 
 
 

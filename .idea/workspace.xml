@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/cs231+cs229 basic NN.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/cs231n+cs229 basic classifier.ipynb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Building your Deep Neural Network - Step by Step.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +31,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logistic+Regression+with+a+Neural+Network+mindset+v5.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Logistic+Regression+with+a+Neural+Network+mindset+v5.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Logistic+Regression+with+a+Neural+Network+mindset+v5.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="2610">
-                <caret line="766" column="0" lean-forward="true" selection-start-line="766" selection-start-column="0" selection-end-line="766" selection-end-column="0" />
+                <caret line="766" column="0" lean-forward="false" selection-start-line="766" selection-start-column="0" selection-end-line="766" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planar+data+classification+with+one+hidden+layer+v5.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="342">
+                <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="195">
+                <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Week 3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="231">
+                <caret line="68" column="92" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -41,9 +87,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>blue</find>
       <find>init</find>
       <find>def</find>
+      <find>blue</find>
+      <find>### [SE].*</find>
       <find>\.\./</find>
     </findStrings>
     <replaceStrings>
@@ -63,6 +110,9 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/cs231+cs229 basic NN.ipynb" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week2.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Logistic+Regression+with+a+Neural+Network+mindset+v5.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md" />
       </list>
     </option>
   </component>
@@ -192,7 +242,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -285,7 +335,47 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2610">
-            <caret line="766" column="0" lean-forward="true" selection-start-line="766" selection-start-column="0" selection-end-line="766" selection-end-column="0" />
+            <caret line="766" column="0" lean-forward="false" selection-start-line="766" selection-start-column="0" selection-end-line="766" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week 3.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week 3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="231">
+            <caret line="68" column="92" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Planar+data+classification+with+one+hidden+layer+v5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor />
