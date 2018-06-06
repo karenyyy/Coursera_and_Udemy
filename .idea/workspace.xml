@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,12 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gradient+Checking+v1.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gradient+Checking+v1.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="333" column="17" lean-forward="false" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="17" />
+              <first_editor relative-caret-position="314">
+                <caret line="446" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -74,12 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Regularization+-+v2.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Regularization+-+v2.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="277">
-                <caret line="79" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="770" selection-end-column="0" />
+              <first_editor relative-caret-position="187">
+                <caret line="432" column="44" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="44" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -96,8 +96,9 @@
       <find>output_</find>
       <find>### [SE].*</find>
       <find>\.\./</find>
-      <find>blue</find>
       <find>img</find>
+      <find>blue</find>
+      <find>src=&quot;images/</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -107,6 +108,7 @@
       <replace>![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_</replace>
+      <replace>src=&quot;https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -257,12 +259,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527496372848</updated>
-      <workItem from="1528258733776" duration="2149000" />
+      <workItem from="1528258733776" duration="2364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2149000" />
+    <option name="totallyTimeSpent" value="2364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -446,17 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="277">
-            <caret line="79" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="770" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -471,8 +462,19 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="314">
+            <caret line="446" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
           <first_editor relative-caret-position="187">
-            <caret line="333" column="17" lean-forward="false" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="17" />
+            <caret line="432" column="44" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />
