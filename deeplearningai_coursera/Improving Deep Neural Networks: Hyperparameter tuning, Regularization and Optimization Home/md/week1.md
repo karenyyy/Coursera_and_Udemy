@@ -7,18 +7,18 @@
     - train test split ratio in normal dataset and modern big dataset is quite different.
     - not having test dataset is also ok, just use the dev set as the test set.
 
-![](../images/1.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/1.png)
 
 > What if the distribution between training dataset and the validation dataset are mismatched?
 
 __Fix: Make sure the dev and test dataset come from the same distribution!__
-![](../images/2.png)
+![](![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/2.png)
 
 ### Bias and Variance (bias-variance trade-off)
 
-![](../images/3.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/3.png)
 
-![](../images/4.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/4.png)
 
 - __Basic recipes for machine learning__
     - High bias (underfitting)
@@ -29,7 +29,7 @@ __Fix: Make sure the dev and test dataset come from the same distribution!__
         - get more data (data augmentation)
         - regularization
         
-![](../images/5.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/5.png)
 
 
 
@@ -57,22 +57,22 @@ $$w^{[l]} = w^{[l]} - \alpha \cdot dw^{[l]}$$
 
 - why can regularization prevent overfitting?
 
-![](../images/6.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/6.png)
 
 - One piece of intuition is that, if you crank the regularization lambda to be really big, they will be incentivized to set the weight matrices W to be reasonably close to zero, which is basically zeroing out a lot of the impact of these hidden units
 - Vice Versa. If w is really big, then lambda is close to zero;
 
 
-![](../images/7.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/7.png)
 
 
-![](../images/8.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/8.png)
 
 __Note: Put all the intuition aside, zeroing out W in practice is not actually what happens. We should think of it as zeroing out or at least reducing the impact of a lot of the hidden units so you end up with what might feel like a simpler network.__
 
 __The intuition of completely zeroing out a hidden unit isn't quite right. What actually happens is they will still use all the hidden units, but each of them would just have a much smaller effect. But you do end up with a simpler network and as thus less prome to overfitting.__
 
-![](../images/9.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/9.png)
 
 - An example exactly why regularization prevent overfitting?
 
@@ -87,7 +87,7 @@ $$z^{[l]} = w^{[l]} a^{[l-1]} +b^{[l]}$$
 #### Extra note:
 > how to use cost function to debug gradient descent function?
 
-![](../images/10.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/10.png)
 
 As we can see, the expected cost decreases monotonically after every elevation of gradient descent.
 
@@ -97,7 +97,7 @@ __Make sure add the regularization part into J!!__
 
 - Inverted dropout
 
-![](../images/11.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/11.png)
 
 Since the NN value of a is reduced, to make sure the NN value of z remains the same, use inverted dropout, which means increase NN size of a by __a/ = keep.prob__, so that we don't need to add add in an extra scalling parameter at test time, and this inverted dropout technique makes test time when evaluating the NN easier, because we have less of a scaling problem.
 
@@ -107,23 +107,23 @@ __No Dropout at test time! that's just adding noise to the final result__
 
 __Intuition: Can't rely on any one feature, so have to spread out weights.__
 
-![](../images/12.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/12.png)
 
 
 #### Other methods of regularization
 - Data Augmentation
 
-![](../images/13.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/13.png)
 
 - Early Stopping
 
-![](../images/15.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/15.png)
 
 ### Setting up your optimization problem
 
 #### Normalizing inputs
 
-![](../images/16.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/16.png)
 
 __Note: If you normalize your features, your cost function will on average look more symmetric. So when you are running gradient descent on the cost function like the one on the left, might need to use a very small learning rate because GD might need a lot of steps to oscillate back and forth before it finds its way to the minimum.__
 
@@ -131,36 +131,36 @@ __Note: If you normalize your features, your cost function will on average look 
 
 #### Vanishing / Exploding gradients
 
-![](../images/17.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/17.png)
 
 $$\hat y = 1.5^L \rightarrow gradident \: explode$$
 
-![](../images/18.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/18.png)
 
 $$\hat y = 0.5^L \rightarrow gradident \: vanish$$
 
 
 > Fix: Careful with the weight initialization for deep networks
 
-![](../images/19.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/19.png)
 
 
 __Xavier initialization: if you are using tanh as activation function__
 
-![](../images/20.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/20.png)
 
 
 - another approach
-![](../images/21.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/21.png)
 
 
 > Gradient checking (__use centered gradient(two-sided)__): to make sure your backprop is correct
 
-![](../images/22.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/22.png)
 
 
-![](../images/23.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/23.png)
 
-![](../images/24.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/24.png)
 
 
