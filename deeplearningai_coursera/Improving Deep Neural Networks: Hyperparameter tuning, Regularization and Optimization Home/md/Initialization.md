@@ -32,7 +32,7 @@ train_X, train_Y, test_X, test_Y = load_dataset()
 ```
 
 
-![png](output_1_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_1_0.png)
 
 
 You would like a classifier to separate the blue dots from the red dots.
@@ -231,7 +231,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_11_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_11_1.png)
 
 
     On the train set:
@@ -272,14 +272,14 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_14_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_14_0.png)
 
 
 The model is predicting 0 for every example. 
 
 In general, initializing all the weights to zero results in the network failing to break symmetry. This means that every neuron in each layer will learn the same thing, and you might as well be training a neural network with $n^{[l]}=1$ for every layer, and the network is no more powerful than a linear classifier such as logistic regression. 
 
-<font color='blue'>
+
 **What you should remember**:
 - The weights $W^{[l]}$ should be initialized randomly to break symmetry. 
 - It is however okay to initialize the biases $b^{[l]}$ to zeros. Symmetry is still broken so long as $W^{[l]}$ is initialized randomly. 
@@ -414,7 +414,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_22_2.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_22_2.png)
 
 
     On the train set:
@@ -457,7 +457,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_25_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_25_0.png)
 
 
 **Observations**:
@@ -465,7 +465,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 - Poor initialization can lead to vanishing/exploding gradients, which also slows down the optimization algorithm. 
 - If you train this network longer you will see better results, but initializing with overly large random numbers slows down the optimization.
 
-<font color='blue'>
+
 **In summary**:
 - Initializing weights to very large random values does not work well. 
 - Hopefully intializing with small random values does better. The important question is: how small should be these random values be? Lets find out in the next part! 
@@ -603,7 +603,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_32_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_32_1.png)
 
 
     On the train set:
@@ -622,7 +622,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_33_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_33_0.png)
 
 
 **Observations**:
@@ -679,7 +679,7 @@ You have seen three different types of initializations. For the same number of i
     </tr>
 </table> 
 
-<font color='blue'>
+
 **What you should remember from this notebook**:
 - Different initializations lead to different results
 - Random initialization is used to break symmetry and make sure different hidden units can learn different things

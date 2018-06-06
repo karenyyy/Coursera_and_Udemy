@@ -39,7 +39,7 @@ train_X, train_Y, test_X, test_Y = load_2D_dataset()
 ```
 
 
-![png](output_3_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_3_0.png)
 
 
 Each dot corresponds to a position on the football field where a football player has hit the ball with his/her head after the French goal keeper has shot the ball from the left side of the football field.
@@ -153,7 +153,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_9_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_9_1.png)
 
 
     On the training set:
@@ -174,7 +174,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_11_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_11_0.png)
 
 
 The non-regularized model is obviously overfitting the training set. It is fitting the noisy points! Lets now look at two techniques to reduce overfitting.
@@ -373,7 +373,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_22_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_22_1.png)
 
 
     On the train set:
@@ -396,7 +396,7 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_24_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_24_0.png)
 
 
 **Observations**:
@@ -407,7 +407,6 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 L2-regularization relies on the assumption that a model with small weights is simpler than a model with large weights. Thus, by penalizing the square values of the weights in the cost function you drive all the weights to smaller values. It becomes too costly for the cost to have large weights! This leads to a smoother model in which the output changes more slowly as the input changes. 
 
-<font color='blue'>
 **What you should remember** -- the implications of L2-regularization on:
 - The cost computation:
     - A regularization term is added to the cost
@@ -673,7 +672,7 @@ predictions_test = predict(test_X, test_Y, parameters)
 
 
 
-![png](output_35_3.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_35_3.png)
 
 
     On the train set:
@@ -696,14 +695,14 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 ```
 
 
-![png](output_37_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_37_0.png)
 
 
 **Note**:
 - A **common mistake** when using dropout is to use it both in training and testing. You should use dropout (randomly eliminate nodes) only in training. 
 - Deep learning frameworks like [tensorflow](https://www.tensorflow.org/api_docs/python/tf/nn/dropout), [PaddlePaddle](http://doc.paddlepaddle.org/release_doc/0.9.0/doc/ui/api/trainer_config_helpers/attrs.html), [keras](https://keras.io/layers/core/#dropout) or [caffe](http://caffe.berkeleyvision.org/tutorial/layers/dropout.html) come with a dropout layer implementation. Don't stress - you will soon learn some of these frameworks.
 
-<font color='blue'>
+
 **What you should remember about dropout:**
 - Dropout is a regularization technique.
 - You only use dropout during training. Don't use dropout (randomly eliminate nodes) during test time.
@@ -764,7 +763,7 @@ Note that regularization hurts training set performance! This is because it limi
 
 Congratulations for finishing this assignment! And also for revolutionizing French football. :-) 
 
-<font color='blue'>
+
 **What we want you to remember from this notebook**:
 - Regularization will help you reduce overfitting.
 - Regularization will drive your weights to lower values.
