@@ -1,0 +1,4 @@
+/home/karen/workspace/data_science/opencv/learnopencv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/karen/workspace/data_science/opencv/learnopencv/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/karen/workspace/data_science/opencv/learnopencv/cmake-build-debug/CMakeFiles/OpenCVTest.dir
+/home/karen/workspace/data_science/opencv/learnopencv/cmake-build-debug/CMakeFiles/learningcpp.dir
