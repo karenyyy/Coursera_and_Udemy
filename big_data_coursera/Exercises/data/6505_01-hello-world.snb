@@ -1,0 +1,81 @@
+{
+  "metadata" : {
+    "name" : "test-notebook",
+    "user_save_timestamp" : "1970-01-01T03:00:00.000Z",
+    "auto_save_timestamp" : "1970-01-01T03:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : null,
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "id" : "1108C7BB3F8F447098B60B0A62413F84"
+    },
+    "cell_type" : "markdown",
+    "source" : "# Hello World"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "01A646B29521467EB20E5A2BDB62904F"
+    },
+    "cell_type" : "code",
+    "source" : "println(\"Hello Spark\")\nval hello = \"Hello\"\nval world = \"World\"\nprintln(hello + world)",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "Hello Spark\nHelloWorld\nhello: String = Hello\nworld: String = World\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 3,
+      "time" : "Took: 2 seconds 173 milliseconds, at 2017-4-11 14:22"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "F34B3D54C1C848F78767E1AE02301F13"
+    },
+    "cell_type" : "code",
+    "source" : "println(hello + \" \" + world)",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "Hello World\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 4,
+      "time" : "Took: 2 seconds 332 milliseconds, at 2017-4-11 14:22"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "FCDD6CD30FF741AB810898D23B47AA18"
+    },
+    "cell_type" : "code",
+    "source" : "",
+    "outputs" : [ ]
+  } ],
+  "nbformat" : 4
+}

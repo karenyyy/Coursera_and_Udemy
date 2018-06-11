@@ -1,0 +1,119 @@
+{
+  "metadata" : {
+    "name" : "3-1-visualisation",
+    "user_save_timestamp" : "1970-01-01T03:00:00.000Z",
+    "auto_save_timestamp" : "1970-01-01T03:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : null,
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "2EADF6ECB45043E88600E17E961CFFCB"
+    },
+    "cell_type" : "code",
+    "source" : "import org.apache.spark.sql.SparkSession\nimport org.apache.spark.sql.functions._\n\nval spark = SparkSession\n  .builder()\n  .appName(\"Spark Example\")\n  .getOrCreate()\nval df = spark.read.option(\"header\", true).option(\"inferSchema\", true).csv(\"data/train.csv\")",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "import org.apache.spark.sql.SparkSession\nimport org.apache.spark.sql.functions._\nspark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@6ca54916\ndf: org.apache.spark.sql.DataFrame = [Id: int, MSSubClass: int ... 79 more fields]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 1,
+      "time" : "Took: 4 seconds 838 milliseconds, at 2017-4-29 18:49"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "01A2EB2F6BDC49BE9FC32970C6ED3D7B"
+    },
+    "cell_type" : "code",
+    "source" : "val avgs = df.groupBy(\"YearBuilt\").agg(avg(\"SalePrice\"))\nLineChart(avgs.sort(\"YearBuilt\"))",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "avgs: org.apache.spark.sql.DataFrame = [YearBuilt: int, avg(SalePrice): double]\nres6: notebook.front.widgets.charts.LineChart[org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]] = <LineChart widget>\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : "<div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anond3055f6c2672754de6510ad1595fd1e4&quot;,&quot;dataInit&quot;:[{&quot;YearBuilt&quot;:1872,&quot;avg(SalePrice)&quot;:122000.0},{&quot;YearBuilt&quot;:1875,&quot;avg(SalePrice)&quot;:94000.0},{&quot;YearBuilt&quot;:1880,&quot;avg(SalePrice)&quot;:200619.75},{&quot;YearBuilt&quot;:1882,&quot;avg(SalePrice)&quot;:168000.0},{&quot;YearBuilt&quot;:1885,&quot;avg(SalePrice)&quot;:111250.0},{&quot;YearBuilt&quot;:1890,&quot;avg(SalePrice)&quot;:142200.0},{&quot;YearBuilt&quot;:1892,&quot;avg(SalePrice)&quot;:291250.0},{&quot;YearBuilt&quot;:1893,&quot;avg(SalePrice)&quot;:325000.0},{&quot;YearBuilt&quot;:1898,&quot;avg(SalePrice)&quot;:106000.0},{&quot;YearBuilt&quot;:1900,&quot;avg(SalePrice)&quot;:112492.6},{&quot;YearBuilt&quot;:1904,&quot;avg(SalePrice)&quot;:157500.0},{&quot;YearBuilt&quot;:1905,&quot;avg(SalePrice)&quot;:163000.0},{&quot;YearBuilt&quot;:1906,&quot;avg(SalePrice)&quot;:135000.0},{&quot;YearBuilt&quot;:1908,&quot;avg(SalePrice)&quot;:183500.0},{&quot;YearBuilt&quot;:1910,&quot;avg(SalePrice)&quot;:111959.05882352941},{&quot;YearBuilt&quot;:1911,&quot;avg(SalePrice)&quot;:130000.0},{&quot;YearBuilt&quot;:1912,&quot;avg(SalePrice)&quot;:119466.66666666667},{&quot;YearBuilt&quot;:1913,&quot;avg(SalePrice)&quot;:90350.0},{&quot;YearBuilt&quot;:1914,&quot;avg(SalePrice)&quot;:126055.28571428571},{&quot;YearBuilt&quot;:1915,&quot;avg(SalePrice)&quot;:134387.5},{&quot;YearBuilt&quot;:1916,&quot;avg(SalePrice)&quot;:139800.0},{&quot;YearBuilt&quot;:1917,&quot;avg(SalePrice)&quot;:129500.0},{&quot;YearBuilt&quot;:1918,&quot;avg(SalePrice)&quot;:172421.42857142858},{&quot;YearBuilt&quot;:1919,&quot;avg(SalePrice)&quot;:154833.33333333334},{&quot;YearBuilt&quot;:1920,&quot;avg(SalePrice)&quot;:112903.33333333333},{&quot;YearBuilt&quot;:1921,&quot;avg(SalePrice)&quot;:140813.33333333334},{&quot;YearBuilt&quot;:1922,&quot;avg(SalePrice)&quot;:109237.5},{&quot;YearBuilt&quot;:1923,&quot;avg(SalePrice)&quot;:159428.57142857142},{&quot;YearBuilt&quot;:1924,&quot;avg(SalePrice)&quot;:105985.71428571429},{&quot;YearBuilt&quot;:1925,&quot;avg(SalePrice)&quot;:129190.625},{&quot;YearBuilt&quot;:1926,&quot;avg(SalePrice)&quot;:124144.44444444444},{&quot;YearBuilt&quot;:1927,&quot;avg(SalePrice)&quot;:82666.66666666667},{&quot;YearBuilt&quot;:1928,&quot;avg(SalePrice)&quot;:135557.14285714287},{&quot;YearBuilt&quot;:1929,&quot;avg(SalePrice)&quot;:153000.0},{&quot;YearBuilt&quot;:1930,&quot;avg(SalePrice)&quot;:103588.88888888889},{&quot;YearBuilt&quot;:1931,&quot;avg(SalePrice)&quot;:126650.0},{&quot;YearBuilt&quot;:1932,&quot;avg(SalePrice)&quot;:233358.5},{&quot;YearBuilt&quot;:1934,&quot;avg(SalePrice)&quot;:220766.66666666666},{&quot;YearBuilt&quot;:1935,&quot;avg(SalePrice)&quot;:161083.33333333334},{&quot;YearBuilt&quot;:1936,&quot;avg(SalePrice)&quot;:137888.88888888888},{&quot;YearBuilt&quot;:1937,&quot;avg(SalePrice)&quot;:131974.2},{&quot;YearBuilt&quot;:1938,&quot;avg(SalePrice)&quot;:109137.5},{&quot;YearBuilt&quot;:1939,&quot;avg(SalePrice)&quot;:150825.0},{&quot;YearBuilt&quot;:1940,&quot;avg(SalePrice)&quot;:131994.44444444444},{&quot;YearBuilt&quot;:1941,&quot;avg(SalePrice)&quot;:120900.0},{&quot;YearBuilt&quot;:1942,&quot;avg(SalePrice)&quot;:162000.0},{&quot;YearBuilt&quot;:1945,&quot;avg(SalePrice)&quot;:133500.0},{&quot;YearBuilt&quot;:1946,&quot;avg(SalePrice)&quot;:122400.0},{&quot;YearBuilt&quot;:1947,&quot;avg(SalePrice)&quot;:117200.0},{&quot;YearBuilt&quot;:1948,&quot;avg(SalePrice)&quot;:137764.2857142857},{&quot;YearBuilt&quot;:1949,&quot;avg(SalePrice)&quot;:111517.58333333333},{&quot;YearBuilt&quot;:1950,&quot;avg(SalePrice)&quot;:128036.25},{&quot;YearBuilt&quot;:1951,&quot;avg(SalePrice)&quot;:136600.0},{&quot;YearBuilt&quot;:1952,&quot;avg(SalePrice)&quot;:110398.6},{&quot;YearBuilt&quot;:1953,&quot;avg(SalePrice)&quot;:146333.33333333334},{&quot;YearBuilt&quot;:1954,&quot;avg(SalePrice)&quot;:139650.0},{&quot;YearBuilt&quot;:1955,&quot;avg(SalePrice)&quot;:134517.1875},{&quot;YearBuilt&quot;:1956,&quot;avg(SalePrice)&quot;:135810.7142857143},{&quot;YearBuilt&quot;:1957,&quot;avg(SalePrice)&quot;:149959.1},{&quot;YearBuilt&quot;:1958,&quot;avg(SalePrice)&quot;:143179.16666666666},{&quot;YearBuilt&quot;:1959,&quot;avg(SalePrice)&quot;:154124.3076923077},{&quot;YearBuilt&quot;:1960,&quot;avg(SalePrice)&quot;:161550.0},{&quot;YearBuilt&quot;:1961,&quot;avg(SalePrice)&quot;:139846.42857142858},{&quot;YearBuilt&quot;:1962,&quot;avg(SalePrice)&quot;:145742.1052631579},{&quot;YearBuilt&quot;:1963,&quot;avg(SalePrice)&quot;:143403.125},{&quot;YearBuilt&quot;:1964,&quot;avg(SalePrice)&quot;:161893.33333333334},{&quot;YearBuilt&quot;:1965,&quot;avg(SalePrice)&quot;:153115.95833333334},{&quot;YearBuilt&quot;:1966,&quot;avg(SalePrice)&quot;:159559.44444444444},{&quot;YearBuilt&quot;:1967,&quot;avg(SalePrice)&quot;:142337.5},{&quot;YearBuilt&quot;:1968,&quot;avg(SalePrice)&quot;:166075.0},{&quot;YearBuilt&quot;:1969,&quot;avg(SalePrice)&quot;:160725.64285714287},{&quot;YearBuilt&quot;:1970,&quot;avg(SalePrice)&quot;:134647.91666666666},{&quot;YearBuilt&quot;:1971,&quot;avg(SalePrice)&quot;:131820.45454545456},{&quot;YearBuilt&quot;:1972,&quot;avg(SalePrice)&quot;:140569.5652173913},{&quot;YearBuilt&quot;:1973,&quot;avg(SalePrice)&quot;:139400.0},{&quot;YearBuilt&quot;:1974,&quot;avg(SalePrice)&quot;:183050.0},{&quot;YearBuilt&quot;:1975,&quot;avg(SalePrice)&quot;:159268.75},{&quot;YearBuilt&quot;:1976,&quot;avg(SalePrice)&quot;:163831.9696969697},{&quot;YearBuilt&quot;:1977,&quot;avg(SalePrice)&quot;:166860.9375},{&quot;YearBuilt&quot;:1978,&quot;avg(SalePrice)&quot;:160962.5},{&quot;YearBuilt&quot;:1979,&quot;avg(SalePrice)&quot;:156396.88888888888},{&quot;YearBuilt&quot;:1980,&quot;avg(SalePrice)&quot;:164800.0},{&quot;YearBuilt&quot;:1981,&quot;avg(SalePrice)&quot;:249880.0},{&quot;YearBuilt&quot;:1982,&quot;avg(SalePrice)&quot;:132400.0},{&quot;YearBuilt&quot;:1983,&quot;avg(SalePrice)&quot;:181400.0},{&quot;YearBuilt&quot;:1984,&quot;avg(SalePrice)&quot;:164111.11111111112},{&quot;YearBuilt&quot;:1985,&quot;avg(SalePrice)&quot;:191400.0},{&quot;YearBuilt&quot;:1986,&quot;avg(SalePrice)&quot;:212000.0},{&quot;YearBuilt&quot;:1987,&quot;avg(SalePrice)&quot;:198000.0},{&quot;YearBuilt&quot;:1988,&quot;avg(SalePrice)&quot;:204636.36363636365},{&quot;YearBuilt&quot;:1989,&quot;avg(SalePrice)&quot;:279500.0},{&quot;YearBuilt&quot;:1990,&quot;avg(SalePrice)&quot;:220881.66666666666},{&quot;YearBuilt&quot;:1991,&quot;avg(SalePrice)&quot;:186140.0},{&quot;YearBuilt&quot;:1992,&quot;avg(SalePrice)&quot;:218384.61538461538},{&quot;YearBuilt&quot;:1993,&quot;avg(SalePrice)&quot;:218058.82352941178},{&quot;YearBuilt&quot;:1994,&quot;avg(SalePrice)&quot;:247900.0},{&quot;YearBuilt&quot;:1995,&quot;avg(SalePrice)&quot;:262194.44444444444},{&quot;YearBuilt&quot;:1996,&quot;avg(SalePrice)&quot;:259162.66666666666},{&quot;YearBuilt&quot;:1997,&quot;avg(SalePrice)&quot;:214925.0},{&quot;YearBuilt&quot;:1998,&quot;avg(SalePrice)&quot;:220450.0},{&quot;YearBuilt&quot;:1999,&quot;avg(SalePrice)&quot;:210614.72},{&quot;YearBuilt&quot;:2000,&quot;avg(SalePrice)&quot;:210766.66666666666},{&quot;YearBuilt&quot;:2001,&quot;avg(SalePrice)&quot;:242630.0},{&quot;YearBuilt&quot;:2002,&quot;avg(SalePrice)&quot;:226869.5652173913},{&quot;YearBuilt&quot;:2003,&quot;avg(SalePrice)&quot;:227408.57777777777},{&quot;YearBuilt&quot;:2004,&quot;avg(SalePrice)&quot;:210347.72222222222},{&quot;YearBuilt&quot;:2005,&quot;avg(SalePrice)&quot;:229680.953125},{&quot;YearBuilt&quot;:2006,&quot;avg(SalePrice)&quot;:251775.44776119402},{&quot;YearBuilt&quot;:2007,&quot;avg(SalePrice)&quot;:255362.73469387754},{&quot;YearBuilt&quot;:2008,&quot;avg(SalePrice)&quot;:348849.1304347826},{&quot;YearBuilt&quot;:2009,&quot;avg(SalePrice)&quot;:269220.0},{&quot;YearBuilt&quot;:2010,&quot;avg(SalePrice)&quot;:394432.0}],&quot;genId&quot;:&quot;53591400&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/lineChart'], \n      function(playground, _magiclineChart) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magiclineChart,\n    \"o\": {\"x\":\"YearBuilt\",\"y\":\"avg(SalePrice)\",\"width\":600,\"height\":400}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <span class=\"chart-total-item-count\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anonf3fbe4762c538e5d4cfa2ee93cc088bf&quot;,&quot;initialValue&quot;:&quot;112&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p> entries total</span>\n      <span class=\"chart-sampling-warning\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anonb382f94d72052af7f135b2d5a9ef5cf2&quot;,&quot;initialValue&quot;:&quot;&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p></span>\n      <div>\n      </div>\n    </div></div>"
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 4,
+      "time" : "Took: 5 seconds 562 milliseconds, at 2017-4-29 19:38"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "79AA87C2CE4140AA8C33CAEF93DFAD41"
+    },
+    "cell_type" : "code",
+    "source" : "val richestNeighborhood = df.groupBy(\"Neighborhood\").agg(sum(\"SalePrice\"))\nPieChart(richestNeighborhood)",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "richestNeighborhood: org.apache.spark.sql.DataFrame = [Neighborhood: string, sum(SalePrice): bigint]\nres8: notebook.front.widgets.charts.PieChart[org.apache.spark.sql.DataFrame] = <PieChart widget>\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : "<div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anon0b6599d14e88c66571dac51579cd9e07&quot;,&quot;dataInit&quot;:[{&quot;Neighborhood&quot;:&quot;Veenker&quot;,&quot;sum(SalePrice)&quot;:2626500},{&quot;Neighborhood&quot;:&quot;BrkSide&quot;,&quot;sum(SalePrice)&quot;:7240375},{&quot;Neighborhood&quot;:&quot;NPkVill&quot;,&quot;sum(SalePrice)&quot;:1284250},{&quot;Neighborhood&quot;:&quot;NridgHt&quot;,&quot;sum(SalePrice)&quot;:24352838},{&quot;Neighborhood&quot;:&quot;NoRidge&quot;,&quot;sum(SalePrice)&quot;:13747108},{&quot;Neighborhood&quot;:&quot;NWAmes&quot;,&quot;sum(SalePrice)&quot;:13800655},{&quot;Neighborhood&quot;:&quot;OldTown&quot;,&quot;sum(SalePrice)&quot;:14489459},{&quot;Neighborhood&quot;:&quot;Gilbert&quot;,&quot;sum(SalePrice)&quot;:15235506},{&quot;Neighborhood&quot;:&quot;Somerst&quot;,&quot;sum(SalePrice)&quot;:19382666},{&quot;Neighborhood&quot;:&quot;Crawfor&quot;,&quot;sum(SalePrice)&quot;:10741861},{&quot;Neighborhood&quot;:&quot;NAmes&quot;,&quot;sum(SalePrice)&quot;:32815593},{&quot;Neighborhood&quot;:&quot;IDOTRR&quot;,&quot;sum(SalePrice)&quot;:3704580},{&quot;Neighborhood&quot;:&quot;Edwards&quot;,&quot;sum(SalePrice)&quot;:12821970},{&quot;Neighborhood&quot;:&quot;Sawyer&quot;,&quot;sum(SalePrice)&quot;:10122692},{&quot;Neighborhood&quot;:&quot;StoneBr&quot;,&quot;sum(SalePrice)&quot;:7762475},{&quot;Neighborhood&quot;:&quot;CollgCr&quot;,&quot;sum(SalePrice)&quot;:29694866},{&quot;Neighborhood&quot;:&quot;SWISU&quot;,&quot;sum(SalePrice)&quot;:3564784},{&quot;Neighborhood&quot;:&quot;MeadowV&quot;,&quot;sum(SalePrice)&quot;:1675800},{&quot;Neighborhood&quot;:&quot;Timber&quot;,&quot;sum(SalePrice)&quot;:9205403},{&quot;Neighborhood&quot;:&quot;Blmngtn&quot;,&quot;sum(SalePrice)&quot;:3312805},{&quot;Neighborhood&quot;:&quot;Mitchel&quot;,&quot;sum(SalePrice)&quot;:7657236},{&quot;Neighborhood&quot;:&quot;SawyerW&quot;,&quot;sum(SalePrice)&quot;:11006792},{&quot;Neighborhood&quot;:&quot;Blueste&quot;,&quot;sum(SalePrice)&quot;:275000},{&quot;Neighborhood&quot;:&quot;BrDale&quot;,&quot;sum(SalePrice)&quot;:1671900},{&quot;Neighborhood&quot;:&quot;ClearCr&quot;,&quot;sum(SalePrice)&quot;:5951832}],&quot;genId&quot;:&quot;223361388&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/pieChart'], \n      function(playground, _magicpieChart) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magicpieChart,\n    \"o\": {\"series\":\"Neighborhood\",\"p\":\"sum(SalePrice)\",\"width\":600,\"height\":400}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <span class=\"chart-total-item-count\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anona71b147d51ef0c505ba844bc64a6c2f1&quot;,&quot;initialValue&quot;:&quot;25&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p> entries total</span>\n      <span class=\"chart-sampling-warning\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anon564ca8d3d931f95f0b0beffb4907521e&quot;,&quot;initialValue&quot;:&quot;&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p></span>\n      <div>\n      </div>\n    </div></div>"
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 5,
+      "time" : "Took: 4 seconds 85 milliseconds, at 2017-4-29 19:40"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "78A1C465E2314F2691E188424C6AC9E8"
+    },
+    "cell_type" : "code",
+    "source" : "val radarData = df.select(\"Id\", \"BsmtFullBath\", \"BsmtHalfBath\", \"FullBath\", \"HalfBath\")\nRadarChart(radarData.take(2), labelField=Some(\"Id\"))",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "radarData: org.apache.spark.sql.DataFrame = [Id: int, BsmtFullBath: int ... 3 more fields]\nres10: notebook.front.widgets.charts.RadarChart[Array[org.apache.spark.sql.Row]] = <RadarChart widget>\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : "<div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anon8d7018f54942d74cc1d130c5daeaac71&quot;,&quot;dataInit&quot;:[{&quot;Id&quot;:1,&quot;FullBath&quot;:2,&quot;HalfBath&quot;:1,&quot;BsmtHalfBath&quot;:0,&quot;BsmtFullBath&quot;:1},{&quot;Id&quot;:2,&quot;FullBath&quot;:2,&quot;HalfBath&quot;:0,&quot;BsmtHalfBath&quot;:1,&quot;BsmtFullBath&quot;:0}],&quot;genId&quot;:&quot;852364269&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/radarChart'], \n      function(playground, _magicradarChart) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magicradarChart,\n    \"o\": {\"classCol\":\"Id\",\"axisCols\":[\"BsmtFullBath\",\"BsmtHalfBath\",\"FullBath\",\"HalfBath\"],\"width\":600,\"height\":400}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <span class=\"chart-total-item-count\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anoncea97cc460b0e514c15768750522d5b1&quot;,&quot;initialValue&quot;:&quot;2&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p> entries total</span>\n      <span class=\"chart-sampling-warning\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anon424d816ee82623cceecee5ff5093b166&quot;,&quot;initialValue&quot;:&quot;&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p></span>\n      <div>\n      </div>\n    </div></div>"
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 6,
+      "time" : "Took: 3 seconds 237 milliseconds, at 2017-4-29 19:43"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "311EE5B10DBD4E188049C23A232F4E6A"
+    },
+    "cell_type" : "code",
+    "source" : "",
+    "outputs" : [ ]
+  } ],
+  "nbformat" : 4
+}

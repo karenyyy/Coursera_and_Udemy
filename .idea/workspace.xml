@@ -10,8 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/Applications-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/MachineGeneratedData-Part1-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/MachineGeneratedData-Part2-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/OrganizationGeneratedData-Part1-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/OrganizationGeneratedData-Part2-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/PeopleGeneratedData-Part1-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/PeopleGeneratedData-Part2-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/Precision-Medicine-Gupta-FinalBM2-_1_-_1_.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/TheKeyIsIntegratingDiverseData-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/WIFIRE-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week1/WhatLaunchedTheBigDataEra-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/0A.DataScience-GettingValueOutOfBigData-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/1A.BuildingABigDataStrategy-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/1B.5PsOfDataScience-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/2.AskingTheRightQuestion-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/3.IntroducingThe6StepProcess-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/4.Step1-AccessingAndRetrievingData-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/5.Step2A-ExploringData-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/6.Step2B-PreprocessingData-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/7.Step3-DataAnalysis-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/8.Step4-ReportingInsights-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/9.Step6-TurningInsightsIntoAction-Altintas.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/CharacteristicsOfBigData-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Scalability-Valence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Scalability-Variety.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Value-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Velocity-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Veracity-Altintas-Final.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/big_data_coursera/Intro_to_big_data/notebooks/week2/Volume-Altintas-Final.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Lecture 1,2-checkpoint.ipynb" afterPath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Lecture 1,2-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Lecture 1,2.ipynb" afterPath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Lecture 1,2.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/notebooks/.ipynb_checkpoints/week2-checkpoint.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/notebooks/.ipynb_checkpoints/week2-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/notebooks/week2.ipynb" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/notebooks/week2.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,12 +83,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Initialization.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Initialization.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="349">
-                <caret line="637" column="12" lean-forward="true" selection-start-line="637" selection-start-column="12" selection-end-line="637" selection-end-column="12" />
+              <first_editor relative-caret-position="443">
+                <caret line="691" column="53" lean-forward="false" selection-start-line="691" selection-start-column="53" selection-end-line="691" selection-end-column="53" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -65,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="314">
-                <caret line="446" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+              <first_editor relative-caret-position="526">
+                <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -74,12 +109,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Regularization+-+v2.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Regularization+-+v2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="432" column="44" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="44" />
+              <first_editor relative-caret-position="86">
+                <caret line="767" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="794" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -94,11 +129,13 @@
       <find>init</find>
       <find>def</find>
       <find>output_</find>
-      <find>### [SE].*</find>
       <find>\.\./</find>
       <find>img</find>
-      <find>blue</find>
       <find>src=&quot;images/</find>
+      <find>blue</find>
+      <find>### [SE].*</find>
+      <find>Instr</find>
+      <find>-</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -109,6 +146,7 @@
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week1/output_</replace>
       <replace>src=&quot;https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
+      <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -129,9 +167,9 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Deep+Neural+Network+-+Application+v8.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week1.md" />
-        <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
-        <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
       </list>
     </option>
   </component>
@@ -259,12 +297,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527496372848</updated>
-      <workItem from="1528258733776" duration="2364000" />
+      <workItem from="1528258733776" duration="3995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2364000" />
+    <option name="totallyTimeSpent" value="3995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -448,22 +486,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="637" column="12" lean-forward="true" selection-start-line="637" selection-start-column="12" selection-end-line="637" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="314">
-            <caret line="446" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+          <first_editor relative-caret-position="526">
+            <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
@@ -473,8 +500,19 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="432" column="44" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="44" />
+          <first_editor relative-caret-position="86">
+            <caret line="767" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="794" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="443">
+            <caret line="691" column="53" lean-forward="false" selection-start-line="691" selection-start-column="53" selection-end-line="691" selection-end-column="53" />
             <folding />
           </first_editor>
           <second_editor />

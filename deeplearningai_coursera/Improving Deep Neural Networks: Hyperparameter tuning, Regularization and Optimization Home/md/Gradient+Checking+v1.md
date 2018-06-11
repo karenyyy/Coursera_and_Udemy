@@ -64,9 +64,9 @@ def forward_propagation(x, theta):
     J -- the value of function J, computed using the formula J(theta) = theta * x
     """
     
-    ### START CODE HERE ### (approx. 1 line)
+    
     J = theta * x
-    ### END CODE HERE ###
+    
     
     return J
 ```
@@ -108,9 +108,9 @@ def backward_propagation(x, theta):
     dtheta -- the gradient of the cost with respect to theta
     """
     
-    ### START CODE HERE ### (approx. 1 line)
+    
     dtheta = x
-    ### END CODE HERE ###
+    
     
     return dtheta
 ```
@@ -137,19 +137,31 @@ print ("dtheta = " + str(dtheta))
 **Exercise**: To show that the `backward_propagation()` function is correctly computing the gradient $\frac{\partial J}{\partial \theta}$, let's implement gradient checking.
 
 **Instructions**:
+
 - First compute "gradapprox" using the formula above (1) and a small value of $\varepsilon$. Here are the Steps to follow:
+    
     1. $\theta^{+} = \theta + \varepsilon$
+    
     2. $\theta^{-} = \theta - \varepsilon$
+    
     3. $J^{+} = J(\theta^{+})$
+    
     4. $J^{-} = J(\theta^{-})$
+    
     5. $gradapprox = \frac{J^{+} - J^{-}}{2  \varepsilon}$
+
 - Then compute the gradient using backward propagation, and store the result in a variable "grad"
+
 - Finally, compute the relative difference between "gradapprox" and the "grad" using the following formula:
 $$ difference = \frac {\mid\mid grad - gradapprox \mid\mid_2}{\mid\mid grad \mid\mid_2 + \mid\mid gradapprox \mid\mid_2} \tag{2}$$
 You will need 3 Steps to compute this formula:
+   
    - 1'. compute the numerator using np.linalg.norm(...)
+   
    - 2'. compute the denominator. You will need to call np.linalg.norm(...) twice.
+   
    - 3'. divide them.
+
 - If this difference is small (say less than $10^{-7}$), you can be quite confident that you have computed your gradient correctly. Otherwise, there may be a mistake in the gradient computation. 
 
 
@@ -171,24 +183,24 @@ def gradient_check(x, theta, epsilon = 1e-7):
     """
     
     # Compute gradapprox using left side of formula (1). epsilon is small enough, you don't need to worry about the limit.
-    ### START CODE HERE ### (approx. 5 lines)
+    
     thetaplus = theta + epsilon                               # Step 1
     thetaminus = theta - epsilon                              # Step 2
     J_plus = forward_propagation(x, thetaplus)                # Step 3
     J_minus = forward_propagation(x, thetaminus)              # Step 4
     gradapprox = (J_plus-J_minus)/(2*epsilon)                 # Step 5
-    ### END CODE HERE ###
+    
     
     # Check if gradapprox is close enough to the output of backward_propagation()
-    ### START CODE HERE ### (approx. 1 line)
-    grad = backward_propagation(x, theta)
-    ### END CODE HERE ###
     
-    ### START CODE HERE ### (approx. 1 line)
+    grad = backward_propagation(x, theta)
+    
+    
+    
     numerator = np.linalg.norm(grad-gradapprox)                               # Step 1'
     denominator = np.linalg.norm(grad)+np.linalg.norm(gradapprox)             # Step 2'
     difference = numerator/denominator                                        # Step 3'
-    ### END CODE HERE ###
+    
     
     if difference < 1e-7:
         print ("The gradient is correct!")
@@ -341,11 +353,14 @@ We have also converted the "gradients" dictionary into a vector "grad" using gra
 **Instructions**: Here is pseudo-code that will help you implement the gradient check.
 
 For each i in num_parameters:
+
 - To compute `J_plus[i]`:
     1. Set $\theta^{+}$ to `np.copy(parameters_values)`
     2. Set $\theta^{+}_i$ to $\theta^{+}_i + \varepsilon$
     3. Calculate $J^{+}_i$ using to `forward_propagation_n(x, y, vector_to_dictionary(`$\theta^{+}$ `))`.     
+
 - To compute `J_minus[i]`: do the same thing with $\theta^{-}$
+
 - Compute $gradapprox[i] = \frac{J^{+}_i - J^{-}_i}{2 \varepsilon}$
 
 Thus, you get a vector gradapprox, where gradapprox[i] is an approximation of the gradient with respect to `parameter_values[i]`. You can now compare this gradapprox vector to the gradients vector from backpropagation. Just like for the 1D case (Steps 1', 2', 3'), compute: 
@@ -383,30 +398,30 @@ def gradient_check_n(parameters, gradients, X, Y, epsilon = 1e-7):
         
         # Compute J_plus[i]. Inputs: "parameters_values, epsilon". Output = "J_plus[i]".
         # "_" is used because the function you have to outputs two parameters but we only care about the first one
-        ### START CODE HERE ### (approx. 3 lines)
+        
         thetaplus = np.copy(parameters_values)                # Step 1
         thetaplus[i][0] = thetaplus[i][0]+epsilon                   # Step 2
         J_plus[i], _ = forward_propagation_n(X, Y, vector_to_dictionary(thetaplus))                                   # Step 3
-        ### END CODE HERE ###
+        
         
         # Compute J_minus[i]. Inputs: "parameters_values, epsilon". Output = "J_minus[i]".
-        ### START CODE HERE ### (approx. 3 lines)
+        
         thetaminus = np.copy(parameters_values)                                    # Step 1
         thetaminus[i][0] = thetaminus[i][0]-epsilon                               # Step 2        
         J_minus[i], _ = forward_propagation_n(X, Y, vector_to_dictionary(thetaminus))     # Step 3
-        ### END CODE HERE ###
+        
         
         # Compute gradapprox[i]
-        ### START CODE HERE ### (approx. 1 line)
+        
         gradapprox[i] = (J_plus[i] - J_minus[i]) / (2 * epsilon)
-        ### END CODE HERE ###
+        
     
     # Compare gradapprox to backward propagation gradients by computing difference.
-    ### START CODE HERE ### (approx. 1 line)
+    
     numerator = np.linalg.norm(grad-gradapprox)                               # Step 1'
     denominator = np.linalg.norm(grad)+np.linalg.norm(gradapprox)             # Step 2'
     difference = numerator/denominator                                        # Step 3'
-    ### END CODE HERE ###
+    
 
     if difference > 2e-7:
         print ("\033[93m" + "There is a mistake in the backward propagation! difference = " + str(difference) + "\033[0m")
@@ -441,13 +456,17 @@ It seems that there were errors in the `backward_propagation_n` code we gave you
 
 Can you get gradient check to declare your derivative computation correct? Even though this part of the assignment isn't graded, we strongly urge you to try to find the bug and re-run gradient check until you're convinced backprop is now correctly implemented. 
 
-**Note** 
+**Note**
+ 
 - Gradient Checking is slow! Approximating the gradient with $\frac{\partial J}{\partial \theta} \approx  \frac{J(\theta + \varepsilon) - J(\theta - \varepsilon)}{2 \varepsilon}$ is computationally costly. For this reason, we don't run gradient checking at every iteration during training. Just a few times to check if the gradient is correct. 
+
 - Gradient Checking, at least as we've presented it, doesn't work with dropout. You would usually run the gradient check algorithm without dropout to make sure your backprop is correct, then add dropout. 
 
 Congrats, you can be confident that your deep learning model for fraud detection is working correctly! You can even use this to convince your CEO. :) 
 
 
 **What you should remember from this notebook**:
+
 - Gradient checking verifies closeness between the gradients from backpropagation and the numerical approximation of the gradient (computed using forward propagation).
+
 - Gradient checking is slow, so we don't run it in every iteration of training. You would usually run it only to make sure your code is correct, then turn it off and use backprop for the actual learning process. 

@@ -27,7 +27,7 @@ plt.rcParams['image.cmap'] = 'gray'
 
 **Problem Statement**: You have just been hired as an AI expert by the French Football Corporation. They would like you to recommend positions where France's goal keeper should kick the ball so that the French team's players can then hit it with their head. 
 
-<img src="images/field_kiank.png" style="width:600px;height:350px;">
+<img https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/field_kiank.png" style="width:600px;height:350px;">
 <caption><center> <u> **Figure 1** </u>: **Football field**<br> The goal keeper kicks the ball in the air, the players of each team are fighting to hit the ball with their head </center></caption>
 
 
@@ -217,9 +217,9 @@ def compute_cost_with_regularization(A3, Y, parameters, lambd):
     
     cross_entropy_cost = compute_cost(A3, Y) # This gives you the cross-entropy part of the cost
     
-    ### START CODE HERE ### (approx. 1 line)
+    
     L2_regularization_cost = (1/m)*(lambd/2)*(np.sum(np.square(W1))+np.sum(np.square(W2))+np.sum(np.square(W3)))
-    ### END CODER HERE ###
+    
     
     cost = cross_entropy_cost + L2_regularization_cost
     
@@ -278,23 +278,23 @@ def backward_propagation_with_regularization(X, Y, cache, lambd):
     
     dZ3 = A3 - Y
     
-    ### START CODE HERE ### (approx. 1 line)
+    
     dW3 = 1./m * np.dot(dZ3, A2.T) + (lambd/m)*W3
-    ### END CODE HERE ###
+    
     db3 = 1./m * np.sum(dZ3, axis=1, keepdims = True)
     
     dA2 = np.dot(W3.T, dZ3)
     dZ2 = np.multiply(dA2, np.int64(A2 > 0))
-    ### START CODE HERE ### (approx. 1 line)
+    
     dW2 = 1./m * np.dot(dZ2, A1.T) + (lambd/m)*W2
-    ### END CODE HERE ###
+    
     db2 = 1./m * np.sum(dZ2, axis=1, keepdims = True)
     
     dA1 = np.dot(W2.T, dZ2)
     dZ1 = np.multiply(dA1, np.int64(A1 > 0))
-    ### START CODE HERE ### (approx. 1 line)
+    
     dW1 = 1./m * np.dot(dZ1, X.T) + (lambd/m)*W1
-    ### END CODE HERE ###
+    
     db1 = 1./m * np.sum(dZ1, axis=1, keepdims = True)
     
     gradients = {"dZ3": dZ3, "dW3": dW3, "db3": db3,"dA2": dA2,
@@ -355,7 +355,9 @@ print ("dW3 = "+ str(grads["dW3"]))
 </table> 
 
 Let's now run the model with L2 regularization $(\lambda = 0.7)$. The `model()` function will call: 
+
 - `compute_cost_with_regularization` instead of `compute_cost`
+
 - `backward_propagation_with_regularization` instead of `backward_propagation`
 
 
@@ -400,7 +402,9 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 
 **Observations**:
+
 - The value of $\lambda$ is a hyperparameter that you can tune using a dev set.
+
 - L2 regularization makes your decision boundary smoother. If $\lambda$ is too large, it is also possible to "oversmooth", resulting in a model with high bias.
 
 **What is L2-regularization actually doing?**:
@@ -408,11 +412,17 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 L2-regularization relies on the assumption that a model with small weights is simpler than a model with large weights. Thus, by penalizing the square values of the weights in the cost function you drive all the weights to smaller values. It becomes too costly for the cost to have large weights! This leads to a smoother model in which the output changes more slowly as the input changes. 
 
 **What you should remember** -- the implications of L2-regularization on:
+
 - The cost computation:
+
     - A regularization term is added to the cost
+
 - The backpropagation function:
+
     - There are extra terms in the gradients with respect to weight matrices
+
 - Weights end up smaller ("weight decay"): 
+
     - Weights are pushed to smaller values.
 
 ## 3 - Dropout
@@ -422,22 +432,26 @@ Finally, **dropout** is a widely used regularization technique that is specific 
 
 <!--
 To understand drop-out, consider this conversation with a friend:
+
 - Friend: "Why do you need all these neurons to train your network and classify images?". 
+
 - You: "Because each neuron contains a weight and can learn specific features/details/shape of an image. The more neurons I have, the more featurse my model learns!"
+
 - Friend: "I see, but are you sure that your neurons are learning different features and not all the same features?"
+
 - You: "Good point... Neurons in the same layer actually don't talk to each other. It should be definitly possible that they learn the same image features/shapes/forms/details... which would be redundant. There should be a solution."
 !--> 
 
 
 <center>
-<video width="620" height="440" src="images/dropout1_kiank.mp4" type="video/mp4" controls>
+<video width="620" height="440" https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/dropout1_kiank.mp4" type="video/mp4" controls>
 </video>
 </center>
 <br>
 <caption><center> <u> Figure 2 </u>: Drop-out on the second hidden layer. <br> At each iteration, you shut down (= set to zero) each neuron of a layer with probability $1 - keep\_prob$ or keep it with probability $keep\_prob$ (50% here). The dropped neurons don't contribute to the training in both the forward and backward propagations of the iteration. </center></caption>
 
 <center>
-<video width="620" height="440" src="images/dropout2_kiank.mp4" type="video/mp4" controls>
+<video width="620" height="440" https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/dropout2_kiank.mp4" type="video/mp4" controls>
 </video>
 </center>
 
@@ -494,20 +508,20 @@ def forward_propagation_with_dropout(X, parameters, keep_prob = 0.5):
     # LINEAR -> RELU -> LINEAR -> RELU -> LINEAR -> SIGMOID
     Z1 = np.dot(W1, X) + b1
     A1 = relu(Z1)
-    ### START CODE HERE ### (approx. 4 lines)         # Steps 1-4 below correspond to the Steps 1-4 described above. 
+    
     D1 = np.random.rand(A1.shape[0], A1.shape[1])     # Step 1: initialize matrix D1 = np.random.rand(..., ...)
     D1 = D1<keep_prob                  # Step 2: convert entries of D1 to 0 or 1 (using keep_prob as the threshold)
     A1 = A1*D1                                         # Step 3: shut down some neurons of A1
     A1 = A1/keep_prob                                 # Step 4: scale the value of neurons that haven't been shut down
-    ### END CODE HERE ###
+    
     Z2 = np.dot(W2, A1) + b2
     A2 = relu(Z2)
-    ### START CODE HERE ### (approx. 4 lines)
+    
     D2 = np.random.rand(A2.shape[0], A2.shape[1])     # Step 1: initialize matrix D2 = np.random.rand(..., ...)
     D2 = D2<keep_prob                                  # Step 2: convert entries of D2 to 0 or 1 (using keep_prob as the threshold)
     A2 = A2*D2                                         # Step 3: shut down some neurons of A2
     A2 = A2/keep_prob                                  # Step 4: scale the value of neurons that haven't been shut down
-    ### END CODE HERE ###
+    
     Z3 = np.dot(W3, A2) + b3
     A3 = sigmoid(Z3)
     
@@ -577,19 +591,19 @@ def backward_propagation_with_dropout(X, Y, cache, keep_prob):
     dW3 = 1./m * np.dot(dZ3, A2.T)
     db3 = 1./m * np.sum(dZ3, axis=1, keepdims = True)
     dA2 = np.dot(W3.T, dZ3)
-    ### START CODE HERE ### (≈ 2 lines of code)
+    
     dA2 = dA2*D2              # Step 1: Apply mask D2 to shut down the same neurons as during the forward propagation
     dA2 = dA2/keep_prob              # Step 2: Scale the value of neurons that haven't been shut down
-    ### END CODE HERE ###
+    
     dZ2 = np.multiply(dA2, np.int64(A2 > 0))
     dW2 = 1./m * np.dot(dZ2, A1.T)
     db2 = 1./m * np.sum(dZ2, axis=1, keepdims = True)
     
     dA1 = np.dot(W2.T, dZ2)
-    ### START CODE HERE ### (≈ 2 lines of code)
+    
     dA1 = dA1*D1              # Step 1: Apply mask D1 to shut down the same neurons as during the forward propagation
     dA1 = dA1/keep_prob              # Step 2: Scale the value of neurons that haven't been shut down
-    ### END CODE HERE ###
+    
     dZ1 = np.multiply(dA1, np.int64(A1 > 0))
     dW1 = 1./m * np.dot(dZ1, X.T)
     db1 = 1./m * np.sum(dZ1, axis=1, keepdims = True)
@@ -645,7 +659,9 @@ print ("dA2 = " + str(gradients["dA2"]))
 </table> 
 
 Let's now run the model with dropout (`keep_prob = 0.86`). It means at every iteration you shut down each neurons of layer 1 and 2 with 14% probability. The function `model()` will now call:
+
 - `forward_propagation_with_dropout` instead of `forward_propagation`.
+
 - `backward_propagation_with_dropout` instead of `backward_propagation`.
 
 
@@ -700,13 +716,18 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 **Note**:
 - A **common mistake** when using dropout is to use it both in training and testing. You should use dropout (randomly eliminate nodes) only in training. 
+
 - Deep learning frameworks like [tensorflow](https://www.tensorflow.org/api_docs/python/tf/nn/dropout), [PaddlePaddle](http://doc.paddlepaddle.org/release_doc/0.9.0/doc/ui/api/trainer_config_helpers/attrs.html), [keras](https://keras.io/layers/core/#dropout) or [caffe](http://caffe.berkeleyvision.org/tutorial/layers/dropout.html) come with a dropout layer implementation. Don't stress - you will soon learn some of these frameworks.
 
 
 **What you should remember about dropout:**
+
 - Dropout is a regularization technique.
+
 - You only use dropout during training. Don't use dropout (randomly eliminate nodes) during test time.
+
 - Apply dropout both during forward and backward propagation.
+
 - During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.  
 
 ## 4 - Conclusions
@@ -765,6 +786,9 @@ Congratulations for finishing this assignment! And also for revolutionizing Fren
 
 
 **What we want you to remember from this notebook**:
+
 - Regularization will help you reduce overfitting.
+
 - Regularization will drive your weights to lower values.
+
 - L2 regularization and Dropout are two very effective regularization techniques.
