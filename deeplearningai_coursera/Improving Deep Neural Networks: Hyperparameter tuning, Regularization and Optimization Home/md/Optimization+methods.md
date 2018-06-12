@@ -28,11 +28,7 @@ plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
 ```
 
-    /home/jovyan/work/week6/opt_utils.py:76: SyntaxWarning: assertion is always true, perhaps remove parentheses?
-      assert(parameters['W' + str(l)].shape == layer_dims[l], layer_dims[l-1])
-    /home/jovyan/work/week6/opt_utils.py:77: SyntaxWarning: assertion is always true, perhaps remove parentheses?
-      assert(parameters['W' + str(l)].shape == layer_dims[l], 1)
-
+  
 
 ## 1 - Gradient Descent
 
@@ -173,7 +169,7 @@ for i in range(0, num_iterations):
 In Stochastic Gradient Descent, you use only 1 training example before updating the gradients. When the training set is large, SGD can be faster. But the parameters will "oscillate" toward the minimum rather than converge smoothly. Here is an illustration of this: 
 
 <img src="images/kiank_sgd.png" style="width:750px;height:250px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u><font color='purple'>  : **SGD vs GD**<br> "+" denotes a minimum of the cost. SGD leads to many oscillations to reach convergence. But each step is a lot faster to compute for SGD than for GD, as it uses only one training example (vs. the whole batch for GD). </center></caption>
+<caption><center> <u> **Figure 1** </u>  : **SGD vs GD**<br> "+" denotes a minimum of the cost. SGD leads to many oscillations to reach convergence. But each step is a lot faster to compute for SGD than for GD, as it uses only one training example (vs. the whole batch for GD). </center></caption>
 
 **Note** also that implementing SGD requires 3 for-loops in total:
 1. Over the number of iterations
@@ -183,9 +179,9 @@ In Stochastic Gradient Descent, you use only 1 training example before updating 
 In practice, you'll often get faster results if you do not use neither the whole training set, nor only one training example, to perform each update. Mini-batch gradient descent uses an intermediate number of examples for each step. With mini-batch gradient descent, you loop over the mini-batches instead of looping over individual training examples.
 
 <img src="images/kiank_minibatch.png" style="width:750px;height:250px;">
-<caption><center> <u> <font color='purple'> **Figure 2** </u>: <font color='purple'>  **SGD vs Mini-Batch GD**<br> "+" denotes a minimum of the cost. Using mini-batches in your optimization algorithm often leads to faster optimization. </center></caption>
+<caption><center> <u>  **Figure 2** </u>:  **SGD vs Mini-Batch GD**<br> "+" denotes a minimum of the cost. Using mini-batches in your optimization algorithm often leads to faster optimization. </center></caption>
 
-<font color='blue'>
+
 **What you should remember**:
 - The difference between gradient descent, mini-batch gradient descent and stochastic gradient descent is the number of examples you use to perform one update step.
 - You have to tune a learning rate hyperparameter $\alpha$.
@@ -320,7 +316,7 @@ print ("mini batch sanity check: " + str(mini_batches[0][0][0][0:3]))
     
 </table>
 
-<font color='blue'>
+
 **What you should remember**:
 - Shuffling and Partitioning are the two steps required to build mini-batches
 - Powers of two are often chosen to be the mini-batch size, e.g., 16, 32, 64, 128.
@@ -332,7 +328,7 @@ Because mini-batch gradient descent makes a parameter update after seeing just a
 Momentum takes into account the past gradients to smooth out the update. We will store the 'direction' of the previous gradients in the variable $v$. Formally, this will be the exponentially weighted average of the gradient on previous steps. You can also think of $v$ as the "velocity" of a ball rolling downhill, building up speed (and momentum) according to the direction of the gradient/slope of the hill. 
 
 <img src="images/opt_momentum.png" style="width:400px;height:250px;">
-<caption><center> <u><font color='purple'>**Figure 3**</u><font color='purple'>: The red arrows shows the direction taken by one step of mini-batch gradient descent with momentum. The blue points show the direction of the gradient (with respect to the current mini-batch) on each step. Rather than just following the gradient, we let the gradient influence $v$ and then take a step in the direction of $v$.<br> <font color='black'> </center>
+<caption><center> <u>**Figure 3**</u>: The red arrows shows the direction taken by one step of mini-batch gradient descent with momentum. The blue points show the direction of the gradient (with respect to the current mini-batch) on each step. Rather than just following the gradient, we let the gradient influence $v$ and then take a step in the direction of $v$.<br> <font color='black'> </center>
 
 
 **Exercise**: Initialize the velocity. The velocity, $v$, is a python dictionary that needs to be initialized with arrays of zeros. Its keys are the same as those in the `grads` dictionary, that is:
@@ -592,7 +588,7 @@ print("v[\"db2\"] = " + str(v["db2"]))
 - Common values for $\beta$ range from 0.8 to 0.999. If you don't feel inclined to tune this, $\beta = 0.9$ is often a reasonable default. 
 - Tuning the optimal $\beta$ for your model might need trying several values to see what works best in term of reducing the value of the cost function $J$. 
 
-<font color='blue'>
+
 **What you should remember**:
 - Momentum takes past gradients into account to smooth out the steps of gradient descent. It can be applied with batch gradient descent, mini-batch gradient descent or stochastic gradient descent.
 - You have to tune a momentum hyperparameter $\beta$ and a learning rate $\alpha$.

@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,12 +21,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="week2.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="week2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="259">
-                <caret line="32" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+                <caret line="32" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Optimization+methods.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="196">
+                <caret line="329" column="4" lean-forward="false" selection-start-line="329" selection-start-column="1" selection-end-line="329" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -41,13 +54,15 @@
       <find>init</find>
       <find>def</find>
       <find>output_</find>
-      <find>img</find>
       <find>src=&quot;images/</find>
-      <find>blue</find>
       <find>### [SE].*</find>
       <find>Instr</find>
-      <find>\.\./</find>
       <find>-</find>
+      <find>\.\./</find>
+      <find>blue</find>
+      <find>font</find>
+      <find>purple</find>
+      <find>img</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -83,6 +98,7 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" />
       </list>
     </option>
   </component>
@@ -197,12 +213,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527496372848</updated>
-      <workItem from="1528258733776" duration="4105000" />
+      <workItem from="1528258733776" duration="4509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4105000" />
+    <option name="totallyTimeSpent" value="4509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -423,7 +439,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="259">
-            <caret line="32" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <caret line="32" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="196">
+            <caret line="329" column="4" lean-forward="false" selection-start-line="329" selection-start-column="1" selection-end-line="329" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
