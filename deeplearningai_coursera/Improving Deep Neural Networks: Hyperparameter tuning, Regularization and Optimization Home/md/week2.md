@@ -1,22 +1,22 @@
 
 ## Mini-batch gradient descent
 
-![](../images/26.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/26.png)
 
 - cluster a batch as one variable for training
 
-![](../images/27.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/27.png)
 
 - Cost oscillates when using mini-batch gradient descent
 
-![](../images/28.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/28.png)
 
 - Choosing your mini-batch size
     - If mini-batch size = m: Batch GD
     - If mini-batch size = 1: Stochastic GD
         - __Every example is its own mini-batch.__
         
-![](../images/29.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/29.png)
 
 - The batch GD might start somewhere and be able to take relatively low noise, large steps, and keep marching to the minimum.
 - The stochastic GD can be extremely noisy, won't always converge, always oscillate and wander around the region of the minimum.
@@ -26,19 +26,19 @@ __In practice, mini-batch size should be in between [1, n]__
 
 ### Gradient descent with momentum
 
-![](../images/30.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/30.png)
 
 - smooth out the steps of gradient descent
 - gradient descent with momentum ends up eventually just taking steps that are much smaller oscillations in the vertical direction
 
-![](../images/31.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/31.png)
 
-![](../images/32.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/32.png)
 
 
 ### Root Mean Square Prop (RMSprop)
 
-![](../images/33.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/33.png)
 
 > How exactly does it work?
 
@@ -56,18 +56,18 @@ Thus the net impact of using RMSprop is that
 - updates in the vertical direction are divided by a much larger number, and so that helps damp out the oscillations.
 - updates in the horizontal direction are divided by a smaller number, making learning rate larger, moving towards the destination in a faster rate. 
 
-![](../images/34.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/34.png)
 
 
 ### Adam Optimization
 
 __Combine Momentum and RMSprop together__
 
-![](../images/35.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/35.png)
 
-![](../images/36.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/36.png)
 
-![](../images/37.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/37.png)
 
 - To avoid the case that the steps being noisy and never converge, ends up wandering around the destination, __because we are using some fixed value for learning rate alpha!__
 
@@ -75,7 +75,7 @@ But if we can slowly reduce learning rate alpha, then during the initial phases,
 
 But then as alpha gets smaller, the steps we take will be slower and smaller. 
 
-![](../images/38.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/38.png)
 
 
 
@@ -85,4 +85,4 @@ __Note:__
 
 - However batch gradient descent always guarantees a lower ***J*** before reaching the optimal.
 
-![](../images/39.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/39.png)
