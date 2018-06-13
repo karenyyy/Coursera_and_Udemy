@@ -278,7 +278,7 @@ print ("sigmoid(12) = " + str(sigmoid(12)))
 
 </table> 
 
-<font color='blue'>
+
 **To summarize, you how know how to**:
 1. Create placeholders
 2. Specify the computation graph corresponding to operations you want to compute
@@ -374,7 +374,7 @@ print ("cost = " + str(cost))
 Many times in deep learning you will have a y vector with numbers ranging from 0 to C-1, where C is the number of classes. If C is for example 4, then you might have the following y vector which you will need to convert as follows:
 
 
-<img src="images/onehot.png" style="width:600px;height:150px;">
+<img src="https://raw.githubusercontent.com/enggen/Deep-Learning-Coursera/master/Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/images/onehot.png" style="width:600px;height:150px;">
 
 This is called a "one hot" encoding, because in the converted representation exactly one element of each column is "hot" (meaning set to 1). To do this conversion in numpy, you might have to write a few lines of code. In tensorflow, you can use one line of code: 
 
@@ -536,7 +536,7 @@ One afternoon, with some friends we decided to teach our computers to decipher s
 Note that this is a subset of the SIGNS dataset. The complete dataset contains many more signs.
 
 Here are examples for each number, and how an explanation of how we represent the labels. These are the original pictures, before we lowered the image resolutoion to 64 by 64 pixels.
-<img src="images/hands.png" style="width:800px;height:350px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
+<img src="https://raw.githubusercontent.com/enggen/Deep-Learning-Coursera/master/Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/images/hands.png" style="width:800px;height:350px;"><caption><center> <u> **Figure 1**</u>: SIGNS dataset <br> <font color='black'> </center>
 
 
 Run the following code to load the dataset.
@@ -1156,7 +1156,6 @@ print("Your algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
 
 You indeed deserved a "thumbs-up" although as you can see the algorithm seems to classify it incorrectly. The reason is that the training set doesn't contain any "thumbs-up", so the model doesn't know how to deal with it! We call that a "mismatched data distribution" and it is one of the various of the next course on "Structuring Machine Learning Projects".
 
-<font color='blue'>
 **What you should remember**:
 - Tensorflow is a programming framework used in deep learning
 - The two main object classes in tensorflow are Tensors and Operators. 
