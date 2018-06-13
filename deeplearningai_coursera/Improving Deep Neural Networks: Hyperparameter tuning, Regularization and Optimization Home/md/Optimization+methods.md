@@ -65,10 +65,10 @@ def update_parameters_with_gd(parameters, grads, learning_rate):
 
     # Update rule for each parameter
     for l in range(L):
-        ### START CODE HERE ### (approx. 2 lines)
+        
         parameters["W" + str(l+1)] = parameters['W' + str(l+1)] - learning_rate * grads['dW' + str(l+1)]
         parameters["b" + str(l+1)] = parameters['b' + str(l+1)] - learning_rate * grads['db' + str(l+1)]
-        ### END CODE HERE ###
+        
         
     return parameters
 ```
@@ -134,7 +134,7 @@ A variant of this is Stochastic Gradient Descent (SGD), which is equivalent to m
 ``` python
 X = data_input
 Y = labels
-parameters = initialize_parameters(layers_dims)
+parameters = initialize_parameters(layers_dims)cd
 for i in range(0, num_iterations):
     # Forward propagation
     a, caches = forward_propagation(X, parameters)
@@ -168,7 +168,7 @@ for i in range(0, num_iterations):
 
 In Stochastic Gradient Descent, you use only 1 training example before updating the gradients. When the training set is large, SGD can be faster. But the parameters will "oscillate" toward the minimum rather than converge smoothly. Here is an illustration of this: 
 
-<img src="images/kiank_sgd.png" style="width:750px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/kiank_sgd.png" style="width:750px;height:250px;">
 <caption><center> <u> **Figure 1** </u>  : **SGD vs GD**<br> "+" denotes a minimum of the cost. SGD leads to many oscillations to reach convergence. But each step is a lot faster to compute for SGD than for GD, as it uses only one training example (vs. the whole batch for GD). </center></caption>
 
 **Note** also that implementing SGD requires 3 for-loops in total:
@@ -178,7 +178,7 @@ In Stochastic Gradient Descent, you use only 1 training example before updating 
 
 In practice, you'll often get faster results if you do not use neither the whole training set, nor only one training example, to perform each update. Mini-batch gradient descent uses an intermediate number of examples for each step. With mini-batch gradient descent, you loop over the mini-batches instead of looping over individual training examples.
 
-<img src="images/kiank_minibatch.png" style="width:750px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/kiank_minibatch.png" style="width:750px;height:250px;">
 <caption><center> <u>  **Figure 2** </u>:  **SGD vs Mini-Batch GD**<br> "+" denotes a minimum of the cost. Using mini-batches in your optimization algorithm often leads to faster optimization. </center></caption>
 
 
@@ -194,11 +194,11 @@ Let's learn how to build mini-batches from the training set (X, Y).
 There are two steps:
 - **Shuffle**: Create a shuffled version of the training set (X, Y) as shown below. Each column of X and Y represents a training example. Note that the random shuffling is done synchronously between X and Y. Such that after the shuffling the $i^{th}$ column of X is the example corresponding to the $i^{th}$ label in Y. The shuffling step ensures that examples will be split randomly into different mini-batches. 
 
-<img src="images/kiank_shuffle.png" style="width:550px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/kiank_shuffle.png" style="width:550px;height:300px;">
 
 - **Partition**: Partition the shuffled (X, Y) into mini-batches of size `mini_batch_size` (here 64). Note that the number of training examples is not always divisible by `mini_batch_size`. The last mini batch might be smaller, but you don't need to worry about this. When the final mini-batch is smaller than the full `mini_batch_size`, it will look like this: 
 
-<img src="images/kiank_partition.png" style="width:550px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/kiank_partition.png" style="width:550px;height:300px;">
 
 **Exercise**: Implement `random_mini_batches`. We coded the shuffling part for you. To help you with the partitioning step, we give you the following code that selects the indexes for the $1^{st}$ and $2^{nd}$ mini-batches:
 ```python
@@ -238,19 +238,19 @@ def random_mini_batches(X, Y, mini_batch_size = 64, seed = 0):
     # Step 2: Partition (shuffled_X, shuffled_Y). Minus the end case.
     num_complete_minibatches = math.floor(m/mini_batch_size) # number of mini batches of size mini_batch_size in your partitionning
     for k in range(0, num_complete_minibatches):
-        ### START CODE HERE ### (approx. 2 lines)
+        
         mini_batch_X = shuffled_X[:, k*mini_batch_size:(k+1)*mini_batch_size]
         mini_batch_Y = shuffled_Y[:, k*mini_batch_size:(k+1)*mini_batch_size]
-        ### END CODE HERE ###
+        
         mini_batch = (mini_batch_X, mini_batch_Y)
         mini_batches.append(mini_batch)
     
     # Handling the end case (last mini-batch < mini_batch_size)
     if m % mini_batch_size != 0:
-        ### START CODE HERE ### (approx. 2 lines)
+        
         mini_batch_X = shuffled_X[:, num_complete_minibatches*mini_batch_size:]
         mini_batch_Y = shuffled_Y[:, num_complete_minibatches*mini_batch_size:]
-        ### END CODE HERE ###
+        
         mini_batch = (mini_batch_X, mini_batch_Y)
         mini_batches.append(mini_batch)
     
@@ -327,7 +327,7 @@ Because mini-batch gradient descent makes a parameter update after seeing just a
 
 Momentum takes into account the past gradients to smooth out the update. We will store the 'direction' of the previous gradients in the variable $v$. Formally, this will be the exponentially weighted average of the gradient on previous steps. You can also think of $v$ as the "velocity" of a ball rolling downhill, building up speed (and momentum) according to the direction of the gradient/slope of the hill. 
 
-<img src="images/opt_momentum.png" style="width:400px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/opt_momentum.png" style="width:400px;height:250px;">
 <caption><center> <u>**Figure 3**</u>: The red arrows shows the direction taken by one step of mini-batch gradient descent with momentum. The blue points show the direction of the gradient (with respect to the current mini-batch) on each step. Rather than just following the gradient, we let the gradient influence $v$ and then take a step in the direction of $v$.<br> <font color='black'> </center>
 
 
@@ -364,10 +364,10 @@ def initialize_velocity(parameters):
     
     # Initialize velocity
     for l in range(L):
-        ### START CODE HERE ### (approx. 2 lines)
+        
         v["dW" + str(l+1)] = np.zeros((parameters["W" + str(l+1)].shape))
         v["db" + str(l+1)] = np.zeros((parameters["b" + str(l+1)].shape))
-        ### END CODE HERE ###
+        
         
     return v
 ```
@@ -471,14 +471,14 @@ def update_parameters_with_momentum(parameters, grads, v, beta, learning_rate):
     # Momentum update for each parameter
     for l in range(L):
         
-        ### START CODE HERE ### (approx. 4 lines)
+        
         # compute velocities
         v["dW" + str(l+1)] = beta * v["dW" + str(l+1)] + (1-beta) * grads['dW' + str(l+1)]
         v["db" + str(l+1)] = beta * v["db" + str(l+1)] + (1-beta) * grads['db' + str(l+1)]
         # update parameters
         parameters["W" + str(l+1)] = parameters["W" + str(l+1)] - learning_rate * v["dW" + str(l+1)]
         parameters["b" + str(l+1)] = parameters["b" + str(l+1)] - learning_rate * v["db" + str(l+1)]
-        ### END CODE HERE ###
+        
         
     return parameters, v
 ```
@@ -663,12 +663,12 @@ def initialize_adam(parameters) :
     
     # Initialize v, s. Input: "parameters". Outputs: "v, s".
     for l in range(L):
-    ### START CODE HERE ### (approx. 4 lines)
+    
         v["dW" + str(l+1)] = np.zeros((parameters["W" + str(l+1)].shape))
         v["db" + str(l+1)] = np.zeros((parameters["b" + str(l+1)].shape))
         s["dW" + str(l+1)] = np.zeros((parameters["W" + str(l+1)].shape))
         s["db" + str(l+1)] = np.zeros((parameters["b" + str(l+1)].shape))
-    ### END CODE HERE ###
+    
     
     return v, s
 ```
@@ -817,38 +817,38 @@ def update_parameters_with_adam(parameters, grads, v, s, t, learning_rate = 0.01
     # Perform Adam update on all parameters
     for l in range(L):
         # Moving average of the gradients. Inputs: "v, grads, beta1". Output: "v".
-        ### START CODE HERE ### (approx. 2 lines)
+        
         v["dW" + str(l+1)] = beta1 * v["dW" + str(l+1)] + (1-beta1) * grads['dW' + str(l+1)]
         v["db" + str(l+1)] = beta1 * v["db" + str(l+1)] + (1-beta1) * grads['db' + str(l+1)]
-        ### END CODE HERE ###
+        
 
         # Compute bias-corrected first moment estimate. Inputs: "v, beta1, t". Output: "v_corrected".
-        ### START CODE HERE ### (approx. 2 lines)
+        
         v_corrected["dW" + str(l+1)] = v["dW" + str(l+1)] / (1- beta1**t)
         v_corrected["db" + str(l+1)] = v["db" + str(l+1)] / (1- beta1**t)
-        ### END CODE HERE ###
+        
 
         # Moving average of the squared gradients. Inputs: "s, grads, beta2". Output: "s".
-        ### START CODE HERE ### (approx. 2 lines)
+        
         s["dW" + str(l+1)] = beta2 * s["dW" + str(l+1)] + (1-beta2) * (grads['dW' + str(l+1)])**2
         s["db" + str(l+1)] = beta2 * s["db" + str(l+1)] + (1-beta2) * (grads['db' + str(l+1)])**2
-        ### END CODE HERE ###
+        
 
         # Compute bias-corrected second raw moment estimate. Inputs: "s, beta2, t". Output: "s_corrected".
-        ### START CODE HERE ### (approx. 2 lines)
+        
         s_corrected["dW" + str(l+1)] = s["dW" + str(l+1)] / (1- beta2**t)
         s_corrected["db" + str(l+1)] = s["db" + str(l+1)] / (1- beta2**t)
-        ### END CODE HERE ###
+        
 
         # Update parameters. Inputs: "parameters, learning_rate, v_corrected, s_corrected, epsilon". Output: "parameters".
-        ### START CODE HERE ### (approx. 2 lines)
+        
         parameters["W" + str(l+1)] = parameters["W" + str(l+1)] - learning_rate * (v_corrected["dW" + str(l+1)] / 
                                                                                   (np.sqrt(s_corrected["dW" + str(l+1)])
                                                                                           + epsilon))
         parameters["b" + str(l+1)] = parameters["b" + str(l+1)] - learning_rate * (v_corrected["db" + str(l+1)] / 
                                                                                   (np.sqrt(s_corrected["db" + str(l+1)])
                                                                                           + epsilon))
-        ### END CODE HERE ###
+        
 
     return parameters, v, s
 ```
@@ -997,7 +997,7 @@ train_X, train_Y = load_dataset()
 ```
 
 
-![png](output_34_0.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_34_0.png)
 
 
 We have already implemented a 3-layer neural network. You will train it with: 
@@ -1131,14 +1131,14 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 
 
-![png](output_38_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_38_1.png)
 
 
     Accuracy: 0.796666666667
 
 
 
-![png](output_38_3.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_38_3.png)
 
 
 ### 5.2 - Mini-batch gradient descent with momentum
@@ -1175,14 +1175,14 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 
 
-![png](output_40_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_40_1.png)
 
 
     Accuracy: 0.796666666667
 
 
 
-![png](output_40_3.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_40_3.png)
 
 
 ### 5.3 - Mini-batch with Adam mode
@@ -1219,14 +1219,14 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 
 
 
-![png](output_42_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_42_1.png)
 
 
     Accuracy: 0.94
 
 
 
-![png](output_42_3.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week2/output_42_3.png)
 
 
 ### 5.4 - Summary
