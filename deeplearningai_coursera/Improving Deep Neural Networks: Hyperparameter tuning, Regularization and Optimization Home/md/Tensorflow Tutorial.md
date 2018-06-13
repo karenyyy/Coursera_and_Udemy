@@ -135,19 +135,19 @@ def linear_function():
     
     np.random.seed(1)
     
-    ### START CODE HERE ### (4 lines of code)
+    
     X = np.random.randn(3, 1)
     W = np.random.randn(4, 3)
     b = np.random.randn(4, 1)
     Y = tf.add(tf.matmul(W, X), b)
-    ### END CODE HERE ### 
+    
     
     # Create the session using tf.Session() and run it with sess.run(...) on the variable you want to calculate
     
-    ### START CODE HERE ###
+    
     sess = tf.Session()
     result = sess.run(Y)
-    ### END CODE HERE ### 
+    
     
     # close the session 
     sess.close()
@@ -228,7 +228,7 @@ def sigmoid(z):
     results -- the sigmoid of z
     """
     
-    ### START CODE HERE ### ( approx. 4 lines of code)
+    
     # Create a placeholder for x. Name it 'x'.
     x = tf.placeholder(tf.float32, name="x")
 
@@ -241,7 +241,7 @@ def sigmoid(z):
         # Run session and call the output "result"
         result = result = sess.run(sigmoid, feed_dict = {x: z})
     
-    ### END CODE HERE ###
+    
     
     return result
 ```
@@ -322,7 +322,7 @@ def cost(logits, labels):
     cost -- runs the session of the cost (formula (2))
     """
     
-    ### START CODE HERE ### 
+    
     
     # Create the placeholders for "logits" (z) and "labels" (y) (approx. 2 lines)
     z = tf.placeholder(tf.float32, name="z")
@@ -340,7 +340,7 @@ def cost(logits, labels):
     # Close the session (approx. 1 line). See method 1 above.
     sess.close()
     
-    ### END CODE HERE ###
+    
     
     return cost
 ```
@@ -400,7 +400,7 @@ def one_hot_matrix(labels, C):
     one_hot -- one hot matrix
     """
     
-    ### START CODE HERE ###
+    
     
     # Create a tf.constant equal to C (depth), name it 'C'. (approx. 1 line)
     C = tf.constant(C, name='C')
@@ -417,7 +417,7 @@ def one_hot_matrix(labels, C):
     # Close the session (approx. 1 line). See method 1 above.
     sess.close()
     
-    ### END CODE HERE ###
+    
     
     return one_hot
 ```
@@ -477,7 +477,7 @@ def ones(shape):
     ones -- array containing only ones
     """
     
-    ### START CODE HERE ###
+    
     
     # Create "ones" tensor using tf.ones(...). (approx. 1 line)
     ones = tf.ones(shape)
@@ -491,7 +491,7 @@ def ones(shape):
     # Close the session (approx. 1 line). See method 1 above.
     sess.close()
     
-    ### END CODE HERE ###
+    
     return ones
 ```
 
@@ -561,7 +561,7 @@ print ("y = " + str(np.squeeze(Y_train_orig[:, index])))
 
 
 
-![png](output_35_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week3/output_35_1.png)
 
 
 As usual you flatten the image dataset, then normalize it by dividing by 255. On top of that, you will convert each label to a one-hot vector as shown in Figure 1. Run the cell below to do so.
@@ -627,10 +627,10 @@ def create_placeholders(n_x, n_y):
       In fact, the number of examples during test/train is different.
     """
 
-    ### START CODE HERE ### (approx. 2 lines)
+    
     X = tf.placeholder(tf.float32, [n_x, None], name="X")
     Y = tf.placeholder(tf.float32, [n_y, None], name="Y")
-    ### END CODE HERE ###
+    
     
     return X, Y
 ```
@@ -700,14 +700,14 @@ def initialize_parameters():
     
     tf.set_random_seed(1)                   # so that your "random" numbers match ours
         
-    ### START CODE HERE ### (approx. 6 lines of code)
+    
     W1 = tf.get_variable("W1", [25, 12288], initializer = tf.contrib.layers.xavier_initializer(seed=1))
     b1 = tf.get_variable("b1", [25, 1], initializer = tf.zeros_initializer())
     W2 = tf.get_variable("W2", [12, 25], initializer = tf.contrib.layers.xavier_initializer(seed=1))
     b2 = tf.get_variable("b2", [12, 1], initializer = tf.zeros_initializer())
     W3 = tf.get_variable("W3", [6, 12], initializer = tf.contrib.layers.xavier_initializer(seed=1))
     b3 = tf.get_variable("b3", [6, 1], initializer = tf.zeros_initializer())
-    ### END CODE HERE ###
+    
 
     parameters = {"W1": W1,
                   "b1": b1,
@@ -813,13 +813,13 @@ def forward_propagation(X, parameters):
     W3 = parameters['W3']
     b3 = parameters['b3']
     
-    ### START CODE HERE ### (approx. 5 lines)              # Numpy Equivalents:
+    
     Z1 = tf.add(tf.matmul(W1, X), b1)                      # Z1 = np.dot(W1, X) + b1
     A1 = tf.nn.relu(Z1)                                    # A1 = relu(Z1)
     Z2 = tf.add(tf.matmul(W2, A1), b2)                     # Z2 = np.dot(W2, a1) + b2
     A2 = tf.nn.relu(Z2)                                    # A2 = relu(Z2)
     Z3 = tf.add(tf.matmul(W3, A2), b3)                     # Z3 = np.dot(W3,Z2) + b3
-    ### END CODE HERE ###
+    
     
     return Z3
 ```
@@ -884,9 +884,9 @@ def compute_cost(Z3, Y):
     logits = tf.transpose(Z3)
     labels = tf.transpose(Y)
     
-    ### START CODE HERE ### (1 line of code)
+    
     cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=labels))
-    ### END CODE HERE ###
+    
     
     return cost
 ```
@@ -975,29 +975,29 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate = 0.0001,
     costs = []                                        # To keep track of the cost
     
     # Create Placeholders of shape (n_x, n_y)
-    ### START CODE HERE ### (1 line)
+    
     X, Y = create_placeholders(n_x, n_y)
-    ### END CODE HERE ###
+    
 
     # Initialize parameters
-    ### START CODE HERE ### (1 line)
+    
     parameters = initialize_parameters()
-    ### END CODE HERE ###
+    
     
     # Forward propagation: Build the forward propagation in the tensorflow graph
-    ### START CODE HERE ### (1 line)
+    
     Z3 = forward_propagation(X, parameters)
-    ### END CODE HERE ###
+    
     
     # Cost function: Add cost function to tensorflow graph
-    ### START CODE HERE ### (1 line)
+    
     cost = compute_cost(Z3, Y)
-    ### END CODE HERE ###
+    
     
     # Backpropagation: Define the tensorflow optimizer. Use an AdamOptimizer.
-    ### START CODE HERE ### (1 line)
+    
     optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
-    ### END CODE HERE ###
+    
     
     # Initialize all the variables
     init = tf.global_variables_initializer()
@@ -1023,9 +1023,9 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate = 0.0001,
                 
                 # IMPORTANT: The line that runs the graph on a minibatch.
                 # Run the session to execute the "optimizer" and the "cost", the feedict should contain a minibatch for (X,Y).
-                ### START CODE HERE ### (1 line)
+                
                 _ , minibatch_cost = sess.run([optimizer, cost], feed_dict={X: minibatch_X, Y: minibatch_Y})
-                ### END CODE HERE ###
+                
                 
                 epoch_cost += minibatch_cost / num_minibatches
 
@@ -1083,7 +1083,7 @@ parameters = model(X_train, Y_train, X_test, Y_test)
 
 
 
-![png](output_62_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week3/output_62_1.png)
 
 
     Parameters have been trained!
@@ -1151,7 +1151,7 @@ print("Your algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
 
 
 
-![png](output_65_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/week3/output_65_1.png)
 
 
 You indeed deserved a "thumbs-up" although as you can see the algorithm seems to classify it incorrectly. The reason is that the training set doesn't contain any "thumbs-up", so the model doesn't know how to deal with it! We call that a "mismatched data distribution" and it is one of the various of the next course on "Structuring Machine Learning Projects".
