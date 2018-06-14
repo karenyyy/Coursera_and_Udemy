@@ -10,68 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/25.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/26.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/images/9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Additional-Dimensionality Reduction-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Additional-SVM-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Lecture 1,2-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/.ipynb_checkpoints/Lecture 3,4-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Additional-Dimensionality Reduction.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Additional-SVM.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Lecture 1,2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/notebooks/Lecture 3,4.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/.ipynb_checkpoints/Gradient Checking-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/.ipynb_checkpoints/Optimization methods-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/.ipynb_checkpoints/Regularization-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/.ipynb_checkpoints/Tensorflow Tutorial-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Gradient Checking.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Initialization.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Optimization methods.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Regularization.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Tensorflow Tutorial.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Week 1 Quiz - Practical aspects of deep learning.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Week 2 Quiz - Optimization algorithms.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/Week 3 Quiz - Hyperparameter tuning, Batch Normalization, Programming Frameworks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/1Dgrad_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/NDgrad_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/cost.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/dictionary_to_vector.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/dropout1_kiank.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/dropout2_kiank.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/field_kiank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/hands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/kiank_minibatch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/kiank_partition.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/kiank_sgd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/kiank_shuffle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/onehot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/opt_momentum.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Improving Deep Neural Networks Hyperparameter tuning, Regularization and Optimization/images/thumbs_up.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Tensorflow Tutorial.md" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Tensorflow Tutorial.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Structuring Machine Learning Projects/Week 1 Quiz - Bird recognition in the city of Peacetopia (case study).md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Structuring Machine Learning Projects/Week 2 Quiz - Autonomous driving (case study).md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" afterPath="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -108,12 +50,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tensorflow Tutorial.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tensorflow Tutorial.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Tensorflow Tutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="392">
-                <caret line="1150" column="0" lean-forward="true" selection-start-line="1121" selection-start-column="0" selection-end-line="1150" selection-end-column="0" />
+                <caret line="1150" column="0" lean-forward="false" selection-start-line="1121" selection-start-column="0" selection-end-line="1150" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lecture 1,2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="216">
+                <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -137,6 +92,7 @@
       <find>### [SE].*</find>
       <find>font</find>
       <find>img</find>
+      <find>2.7</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -174,6 +130,7 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Tensorflow Tutorial.md" />
+        <option value="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" />
       </list>
     </option>
   </component>
@@ -186,7 +143,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-11" />
     <option name="y" value="31" />
     <option name="width" value="1977" />
@@ -242,7 +199,26 @@
             <path>
               <item name="Coursera_and_Udemy" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearningai_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Neural_Networks_and_Deep_Learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
               <item name="NLP_coursera+stanford224n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="NLP_coursera+stanford224n" type="462c0819:PsiDirectoryNode" />
+              <item name="cs224n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="NLP_coursera+stanford224n" type="462c0819:PsiDirectoryNode" />
+              <item name="cs224n" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,25 +258,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527496372848</updated>
-      <workItem from="1528258733776" duration="8621000" />
+      <workItem from="1528258733776" duration="9488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8621000" />
+    <option name="totallyTimeSpent" value="9488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="31" width="1977" height="1215" extended-state="0" />
+    <frame x="-3" y="31" width="1926" height="1003" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16945712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2030686" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22098215" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -530,7 +506,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="392">
-            <caret line="1150" column="0" lean-forward="true" selection-start-line="1121" selection-start-column="0" selection-end-line="1150" selection-end-column="0" />
+            <caret line="1150" column="0" lean-forward="false" selection-start-line="1121" selection-start-column="0" selection-end-line="1150" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
