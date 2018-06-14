@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/learningcpp.dir/main.cpp.o  -o learningcpp 
