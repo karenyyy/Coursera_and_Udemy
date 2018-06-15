@@ -13,9 +13,7 @@ import utils.glove as glove
 
 from sgd import load_saved_params, sgd
 
-# We will use sklearn here because it will run faster than implementing
-# ourselves. However, for other parts of this assignment you must implement
-# the functions yourself!
+
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
