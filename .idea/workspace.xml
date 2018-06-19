@@ -9,81 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/1-hot-vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/LSTM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/LSTM_rnn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/RNN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/attn_mechanism.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/attn_model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/clip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/cosine_sim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/data_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/dataset_kiank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/date_attention.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/date_attention2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/dino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/dinos3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emb_kiank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/embedding1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emo_model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emojifier-v2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emojifierv1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emojify_model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/emojiss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/equalize10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/image_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/initial_state.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/jazz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/label_diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/lookup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/mangosaurus.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/model_trigger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/music_gen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/music_generation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/neutral.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/neutralize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/neutralize_kiank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/ones_reference.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/poorly_trained_model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/rnn1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/rnn_cell_backprop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/rnn_step_forward.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/shakespeare.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/sound.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/spectrogram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/train_label.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/train_reference.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/NMT/images/woebot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursera_and_Udemy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursera_and_Udemy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/img_captioning/image_captioning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/assignment1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/assignment1_soln.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/collect_submission.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/get_datasets.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q1_softmax.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q2_gradcheck.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q2_neural.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q2_sigmoid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q3_run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q3_sgd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q3_word2vec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/q4_sentiment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/utils/glove.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/sentiment_analysis/assignment1/utils/treebank.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Emojify - v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Emojify - v2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Improvise a Jazz Solo with an LSTM Network - v1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Improvise a Jazz Solo with an LSTM Network - v1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Neural machine translation with attention - v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Neural machine translation with attention - v2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Operations on word vectors - v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Operations on word vectors - v2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Trigger word detection - v1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Trigger word detection - v1.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+            <state relative-caret-position="294">
+              <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sentiment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sentiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="158" column="37" lean-forward="true" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
+            <state relative-caret-position="504">
+              <caret line="185" column="51" selection-start-line="185" selection-start-column="51" selection-end-line="185" selection-end-column="51" />
               <folding>
                 <element signature="e#23#38#0" expanded="true" />
               </folding>
@@ -117,7 +43,7 @@
       <file leaf-file-name="sgd.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sgd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
+            <state relative-caret-position="1386">
               <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
               <folding>
                 <element signature="e#107#118#0" expanded="true" />
@@ -129,7 +55,7 @@
       <file leaf-file-name="sigmoid.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sigmoid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
+            <state relative-caret-position="648">
               <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
             </state>
           </provider>
@@ -147,8 +73,8 @@
       <file leaf-file-name="word2vec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+            <state relative-caret-position="365">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -163,11 +89,6 @@
               <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="git.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git.sh">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -234,12 +155,12 @@
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/gradcheck.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/neural.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py" />
-        <option value="$PROJECT_DIR$/Projects/sentiment_analysis/run.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/sgd.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/sigmoid.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/softmax.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py" />
         <option value="$PROJECT_DIR$/Projects/img_captioning/image_captioning.py" />
+        <option value="$PROJECT_DIR$/Projects/sentiment_analysis/run.py" />
       </list>
     </option>
   </component>
@@ -287,12 +208,6 @@
               <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
               <item name="deeplearningai_coursera" type="462c0819:PsiDirectoryNode" />
               <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="Sequence Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="deeplearningai_coursera" type="462c0819:PsiDirectoryNode" />
               <item name="Sequence Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -363,26 +278,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19239374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19239374" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="LuaJ" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,36 +313,67 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="576">
-            <caret line="32" selection-end-line="88" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2448">
-            <caret line="136" column="47" lean-forward="true" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sgd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+          <folding>
+            <element signature="e#107#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="12" column="23" selection-end-line="88" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sigmoid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/img_captioning/keras_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2844">
+          <caret line="158" column="19" lean-forward="true" selection-start-line="158" selection-start-column="19" selection-end-line="158" selection-end-column="19" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" />
+    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" />
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -539,9 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/notebooks/week2.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -552,83 +501,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="252">
-            <caret line="14" column="25" selection-end-line="166" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="526">
-            <caret line="168" column="9" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="86">
-            <caret line="767" column="13" selection-end-line="794" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="443">
-            <caret line="691" column="53" selection-start-line="691" selection-start-column="53" selection-end-line="691" selection-end-column="53" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week1.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Gradient+Checking+v1.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Regularization+-+v2.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Initialization.md" />
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Tensorflow Tutorial.md" />
-    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/Bayesian_Methods_for_Machine_Learning/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="450">
-            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
-            <caret line="162" column="59" lean-forward="true" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/get_datasets.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/Optimization+methods.md" />
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/gradcheck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -640,31 +520,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sgd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
+        <state relative-caret-position="1386">
           <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
           <folding>
             <element signature="e#107#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git.sh">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/softmax.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,21 +542,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
+        <state relative-caret-position="648">
           <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/img_captioning/image_captioning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="651" lean-forward="true" selection-start-line="651" selection-end-line="651" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/img_captioning/image_captioning.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/img_captioning/image_captioning.py" />
     <entry file="file://$PROJECT_DIR$/Projects/NMT/nmt_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -697,13 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/NMT/Neural machine translation with attention - v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/NMT/Neural machine translation with attention - v2.py" />
     <entry file="file://$PROJECT_DIR$/Projects/img_captioning/keras_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -711,23 +563,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="185" column="51" selection-start-line="185" selection-start-column="51" selection-end-line="185" selection-end-column="51" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+        <state relative-caret-position="365">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py">
+    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="158" column="37" lean-forward="true" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
         </state>
       </provider>
     </entry>
