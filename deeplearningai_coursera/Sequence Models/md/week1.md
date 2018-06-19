@@ -5,14 +5,14 @@
 
 #### One-Hot
 
-![](../images/1.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/1.png)
 
 
 ## RNN
 
 > Why not use a standard network?
 
-![](../images/2.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/2.png)
 
 __Problems:__
 
@@ -21,7 +21,7 @@ __Problems:__
 - the input layer would be really large
 - A weight matrix of this first layer will end up having an enormous number of parameters
 
-![](../images/3.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/3.png)
 
 - RNN scans through the data from left to right
 - The parameters it uses for each time step are shared
@@ -37,7 +37,7 @@ __Weakness:__
     - when predicting y3, it does not use x4, x5, x6 ... (appear later)
         - it is a problem because in a sentence:   words follows later are more useful fo name detecting this case
         
-![](../images/4.png) 
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/4.png) 
 
 
 > How to fix this problem?
@@ -46,28 +46,28 @@ Introduce __Bidirectional RNN (BRNN)__
 
 __Forward Propagation__
 
-![](../images/5.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/5.png)
 
-![](../images/6.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/6.png)
 
 
 __Cost Function__
 
-![](../images/7.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/7.png)
 
 
 After computing the total cost, then back prop:
 
-![](../images/8.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/8.png)
 
 ### Different types fo RNN
 
 
-![](../images/9.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/9.png)
 
-![](../images/10.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/10.png)
 
-![](../images/11.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/11.png)
 
 
 
@@ -77,7 +77,7 @@ After computing the total cost, then back prop:
 
 __Language model tells what the probability of a sentence is(how likely does it make snese?)__
 
-![](../images/13.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/13.png)
 
 Training set: large corpus of english text
 
@@ -88,9 +88,9 @@ Training set: large corpus of english text
     - replace unknown words in the sentence with 'UNK' (unknown)
 - Next Step: build a RNN to model the chance of these different sentences
 
-![](../images/14.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/14.png)
 
-![](../images/15.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/15.png)
 
 ## Sampling a sequence from a trained RNN
 
@@ -100,7 +100,7 @@ Recap that a sequence model models the chances of any particular sequence of wor
     - your first time stamp will have some max probability over possible outputs
 - Second Step: randomly sample according to the softmax distribution
 
-![](../images/16.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/16.png)
 
 
 
@@ -129,7 +129,7 @@ Use __GRU__
 
 ## GRU
 
-![](../images/17.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/17.png)
 
 Using the cat example above:
 
@@ -158,29 +158,29 @@ $$\Gamma_{u} = 0 \text{ if sentence ends and subject changes } $$
 
 $$c^{<t>} = \Gamma_u * \hat c^{<t>} + (1-\Gamma_u) * c^{<t-1>}$$
 
-![](../images/18.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/18.png)
 
-![](../images/19.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/19.png)
 
 
 ### Full GRU
 
-![](../images/20.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/20.png)
 
 $$ \Gamma r \text{ tells how relevant is } c^{<t-1>}$$
 
-![](../images/21.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/21.png)
 
 ## LSTM
 
-![](../images/22.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/22.png)
 
-![](../images/23.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/23.png)
 
-![](../images/24.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/24.png)
 
 
 
 ## BRNN
 
-![](../images/25.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/25.png)

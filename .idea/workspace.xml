@@ -9,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
               <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="week1.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -101,7 +115,6 @@
       <find>src=&quot;images/</find>
       <find>Instr</find>
       <find>-</find>
-      <find>\.\./</find>
       <find>blue</find>
       <find>purple</find>
       <find>### [SE].*</find>
@@ -114,6 +127,7 @@
       <find>### [YE].*</find>
       <find>wrapper</find>
       <find>ord2vecCostAndGradient</find>
+      <find>\.\./</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -125,6 +139,7 @@
       <replace>src=&quot;https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/</replace>
+      <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -161,6 +176,7 @@
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py" />
         <option value="$PROJECT_DIR$/Projects/img_captioning/image_captioning.py" />
         <option value="$PROJECT_DIR$/Projects/sentiment_analysis/run.py" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md" />
       </list>
     </option>
   </component>
@@ -213,6 +229,19 @@
             <path>
               <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearningai_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Sequence Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="deeplearningai_coursera" type="462c0819:PsiDirectoryNode" />
+              <item name="Sequence Models" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coursera_and_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coursera_and_Udemy" type="462c0819:PsiDirectoryNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,7 +264,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChatBot" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -278,6 +307,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -285,8 +315,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19239374" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19239374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" />
@@ -587,6 +617,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
