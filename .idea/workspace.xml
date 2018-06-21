@@ -9,10 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Building a Recurrent Neural Network - Step by Step - v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Building a Recurrent Neural Network - Step by Step - v2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Dinosaurus Island -- Character level language model final - v3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/assignment/Sequence Models/Dinosaurus Island -- Character level language model final - v3.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="week1.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="week1.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="441">
-                <caret line="180" lean-forward="true" selection-end-line="186" />
+                <caret line="180" selection-end-line="186" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="484">
+                <caret line="49" column="37" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -262,16 +271,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3060">
-            <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -553,7 +552,17 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="441">
-            <caret line="180" lean-forward="true" selection-end-line="186" />
+            <caret line="180" selection-end-line="186" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="484">
+            <caret line="49" column="37" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="37" />
           </first_editor>
           <second_editor />
         </state>
