@@ -9,15 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/.ipynb_checkpoints/Keras_NLP_basic-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/Keras_NLP_basic.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +31,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="195" column="23" selection-end-line="696" />
+              <first_editor relative-caret-position="468">
+                <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="week2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1674">
+                <caret line="93" column="115" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
               </first_editor>
               <second_editor />
             </state>
@@ -128,6 +132,7 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md" />
       </list>
     </option>
   </component>
@@ -255,8 +260,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19239374" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23489933" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -283,16 +288,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="20664">
-            <caret line="195" column="23" lean-forward="true" selection-end-line="696" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/softmax.py" />
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py" />
     <entry file="file://$PROJECT_DIR$/Projects/img_captioning/keras_utils.py" />
@@ -480,8 +475,18 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="195" column="23" selection-end-line="696" />
+          <first_editor relative-caret-position="468">
+            <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1674">
+            <caret line="93" column="115" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
           </first_editor>
           <second_editor />
         </state>
