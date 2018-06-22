@@ -32,7 +32,7 @@ from rnn_utils import *
 
 Later this week, you will generate music using an RNN. The basic RNN that you will implement has the structure below. In this example, $T_x = T_y$. 
 
-<img src="images/RNN.png" style="width:500;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/RNN.png" style="width:500;height:300px;">
 <caption><center> **Figure 1**: Basic RNN model </center></caption>
 
 Here's how you can implement an RNN: 
@@ -47,7 +47,7 @@ Let's go!
 
 A Recurrent neural network can be seen as the repetition of a single cell. You are first going to implement the computations for a single time-step. The following figure describes the operations for a single time-step of an RNN cell. 
 
-<img src="images/rnn_step_forward.png" style="width:700px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/rnn_step_forward.png" style="width:700px;height:300px;">
 <caption><center> **Figure 2**: Basic RNN cell. Takes as input $x^{\langle t \rangle}$ (current input) and $a^{\langle t - 1\rangle}$ (previous hidden state containing information from the past), and outputs $a^{\langle t \rangle}$ which is given to the next RNN cell and also used to predict $y^{\langle t \rangle}$ </center></caption>
 
 **Exercise**: Implement the RNN-cell described in Figure (2).
@@ -90,12 +90,12 @@ def rnn_cell_forward(xt, a_prev, parameters):
     ba = parameters["ba"]
     by = parameters["by"]
     
-    ### START CODE HERE ### (≈2 lines)
+    
     # compute next activation state using the formula given above
     a_next = np.tanh(np.matmul(Waa,a_prev)+np.matmul(Wax,xt)+ba)
     # compute output of the current cell using the formula given above
     yt_pred = softmax(np.matmul(Wya, a_next)+by)   
-    ### END CODE HERE ###
+    
     
     # store values you need for backward propagation in cache
     cache = (a_next, a_prev, xt, parameters)
@@ -176,7 +176,7 @@ print("yt_pred.shape = ", yt_pred.shape)
 You can see an RNN as the repetition of the cell you've just built. If your input sequence of data is carried over 10 time steps, then you will copy the RNN cell 10 times. Each cell takes as input the hidden state from the previous cell ($a^{\langle t-1 \rangle}$) and the current time-step's input data ($x^{\langle t \rangle}$). It outputs a hidden state ($a^{\langle t \rangle}$) and a prediction ($y^{\langle t \rangle}$) for this time-step.
 
 
-<img src="images/rnn.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/rnn.png" style="width:800px;height:300px;">
 <caption><center> **Figure 3**: Basic RNN. The input sequence $x = (x^{\langle 1 \rangle}, x^{\langle 2 \rangle}, ..., x^{\langle T_x \rangle})$  is carried over $T_x$ time steps. The network outputs $y = (y^{\langle 1 \rangle}, y^{\langle 2 \rangle}, ..., y^{\langle T_x \rangle})$. </center></caption>
 
 
@@ -224,7 +224,7 @@ def rnn_forward(x, a0, parameters):
     n_x, m, T_x = x.shape
     n_y, n_a = parameters["Wya"].shape
     
-    ### START CODE HERE ###
+    
     
     # initialize "a" and "y" with zeros (≈2 lines)
     a = np.zeros((n_a, m, T_x))
@@ -244,7 +244,7 @@ def rnn_forward(x, a0, parameters):
         # Append "cache" to "caches" (≈1 line)
         caches.append(cache)
         
-    ### END CODE HERE ###
+    
     
     # store values needed for backward propagation in cache
     caches = (caches, x)
@@ -343,7 +343,7 @@ In the next part, you will build a more complex LSTM model, which is better at a
 
 This following figure shows the operations of an LSTM-cell.
 
-<img src="images/LSTM.png" style="width:500;height:400px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/LSTM.png" style="width:500;height:400px;">
 <caption><center> **Figure 4**: LSTM-cell. This tracks and updates a "cell state" or memory variable $c^{\langle t \rangle}$ at every time-step, which can be different from $a^{\langle t \rangle}$. </center></caption>
 
 Similar to the RNN example above, you will start by implementing the LSTM cell for a single time-step. Then you can iteratively call it from inside a for-loop to have it process an input with $T_x$ time-steps. 
@@ -445,7 +445,7 @@ def lstm_cell_forward(xt, a_prev, c_prev, parameters):
     n_x, m = xt.shape
     n_y, n_a = Wy.shape
 
-    ### START CODE HERE ###
+    
     # Concatenate a_prev and xt (≈3 lines)
     concat = np.zeros((n_a+n_x, m))
     concat[: n_a, :] = a_prev
@@ -461,7 +461,7 @@ def lstm_cell_forward(xt, a_prev, c_prev, parameters):
     
     # Compute prediction of the LSTM cell (≈1 line)
     yt_pred = softmax(np.matmul(Wy, a_next)+by)
-    ### END CODE HERE ###
+    
 
     # store values needed for backward propagation in cache
     cache = (a_next, c_next, a_prev, c_prev, ft, it, cct, ot, xt, parameters)
@@ -591,7 +591,7 @@ print("len(cache) = ", len(cache))
 
 Now that you have implemented one step of an LSTM, you can now iterate this over this using a for-loop to process a sequence of $T_x$ inputs. 
 
-<img src="images/LSTM_rnn.png" style="width:500;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/LSTM_rnn.png" style="width:500;height:300px;">
 <caption><center> **Figure 4**: LSTM over multiple time-steps. </center></caption>
 
 **Exercise:** Implement `lstm_forward()` to run an LSTM over $T_x$ time-steps. 
@@ -630,7 +630,7 @@ def lstm_forward(x, a0, parameters):
     # Initialize "caches", which will track the list of all the caches
     caches = []
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from shapes of x and parameters['Wy'] (≈2 lines)
     n_x, m, T_x = x.shape
     n_y, n_a = parameters['Wy'].shape
@@ -657,7 +657,7 @@ def lstm_forward(x, a0, parameters):
         # Append the cache into caches (≈1 line)
         caches.append(cache)
         
-    ### END CODE HERE ###
+    
     
     # store values needed for backward propagation in cache
     caches = (caches, x)
@@ -783,7 +783,7 @@ When in an earlier course you implemented a simple (fully connected) neural netw
 
 We will start by computing the backward pass for the basic RNN-cell.
 
-<img src="images/rnn_cell_backprop.png" style="width:500;height:300px;"> <br>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/rnn_cell_backprop.png" style="width:500;height:300px;"> <br>
 <caption><center> **Figure 5**: RNN-cell's backward pass. Just like in a fully-connected neural network, the derivative of the cost function $J$ backpropagates through the RNN by following the chain-rule from calculas. The chain-rule is also used to calculate $(\frac{\partial J}{\partial W_{ax}},\frac{\partial J}{\partial W_{aa}},\frac{\partial J}{\partial b})$ to update the parameters $(W_{ax}, W_{aa}, b_a)$. </center></caption>
 
 #### Deriving the one step backward functions: 
@@ -825,7 +825,7 @@ def rnn_cell_backward(da_next, cache):
     ba = parameters["ba"]
     by = parameters["by"]
 
-    ### START CODE HERE ###
+    
     # compute the gradient of tanh with respect to a_next (≈1 line)
     dtanh = (1-a_next**2)*da_next  
 
@@ -840,7 +840,7 @@ def rnn_cell_backward(da_next, cache):
     # compute the gradient with respect to b (≈1 line)
     dba = np.sum( dtanh,keepdims=True,axis=-1) # formula 5
 
-    ### END CODE HERE ###
+    
 
     # Store the gradients in a python dictionary
     gradients = {"dxt": dxt, "da_prev": da_prev, "dWax": dWax, "dWaa": dWaa, "dba": dba}
@@ -1000,7 +1000,7 @@ def rnn_backward(da, caches):
                         dba -- Gradient w.r.t the bias, of shape (n_a, 1)
     """
         
-    ### START CODE HERE ###
+    
     
     # Retrieve values from the first cache (t=1) of caches (≈2 lines)
     (caches, x) = caches
@@ -1032,7 +1032,7 @@ def rnn_backward(da, caches):
         
     # Set da0 to the gradient of a which has been backpropagated through all time-steps (≈1 line) 
     da0 = da_prevt
-    ### END CODE HERE ###
+    
 
     # Store the gradients in a python dictionary
     gradients = {"dx": dx, "da0": da0, "dWax": dWax, "dWaa": dWaa,"dba": dba}
@@ -1229,7 +1229,7 @@ def lstm_cell_backward(da_next, dc_next, cache):
     # Retrieve information from "cache"
     (a_next, c_next, a_prev, c_prev, ft, it, cct, ot, xt, parameters) = cache
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from xt's and a_next's shape (≈2 lines)
     n_x, m = xt.shape
     n_a, m = a_next.shape
@@ -1255,7 +1255,7 @@ def lstm_cell_backward(da_next, dc_next, cache):
     da_prev = np.dot(parameters['Wf'][:,:n_a].T,dft)+np.dot(parameters['Wi'][:,:n_a].T,dit)+np.dot(parameters['Wc'][:,:n_a].T,dcct)+np.dot(parameters['Wo'][:,:n_a].T,dot)  
     dc_prev = dc_next*ft+ot*(1-np.square(np.tanh(c_next)))*ft*da_next  
     dxt = np.dot(parameters['Wf'][:,n_a:].T,dft)+np.dot(parameters['Wi'][:,n_a:].T,dit)+np.dot(parameters['Wc'][:,n_a:].T,dcct)+np.dot(parameters['Wo'][:,n_a:].T,dot) 
-    ### END CODE HERE ###
+    
     
     # Save gradients in dictionary
     gradients = {"dxt": dxt, "da_prev": da_prev, "dc_prev": dc_prev, "dWf": dWf,"dbf": dbf, "dWi": dWi,"dbi": dbi,
@@ -1553,7 +1553,7 @@ def lstm_backward(da, caches):
     (caches, x) = caches
     (a1, c1, a0, c0, f1, i1, cc1, o1, x1, parameters) = caches[0]
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from da's and x1's shapes (≈2 lines)
     n_a, m, T_x = da.shape  
     n_x, m = x1.shape 
@@ -1592,7 +1592,7 @@ def lstm_backward(da, caches):
     # Set the first activation's gradient to the backpropagated gradient da_prev.
     da0 =gradients['da_prev']
     
-    ### END CODE HERE ###
+    
 
     # Store the gradients in a python dictionary
     gradients = {"dx": dx, "da0": da0, "dWf": dWf,"dbf": dbf, "dWi": dWi,"dbi": dbi,
