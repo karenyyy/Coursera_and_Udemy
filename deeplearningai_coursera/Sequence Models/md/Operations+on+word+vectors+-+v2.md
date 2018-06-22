@@ -104,7 +104,7 @@ $$\text{CosineSimilarity(u, v)} = \frac {u . v} {||u||_2 ||v||_2} = cos(\theta)�
 
 where $u.v$ is the dot product (or inner product) of two vectors, $||u||_2$ is the norm (or length) of the vector $u$, and $\theta$ is the angle between $u$ and $v$. This similarity depends on the angle between $u$ and $v$. If $u$ and $v$ are very similar, their cosine similarity will be close to 1; if they are dissimilar, the cosine similarity will take a smaller value. 
 
-<img src="images/cosine_sim.png" style="width:800px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/cosine_sim.png" style="width:800px;height:250px;">
 <caption><center> **Figure 1**: The cosine of the angle between two vectors is a measure of how similar they are</center></caption>
 
 **Exercise**: Implement the function `cosine_similarity()` to evaluate similarity between word vectors.
@@ -129,7 +129,7 @@ def cosine_similarity(u, v):
     
     distance = 0.0
     
-    ### START CODE HERE ###
+    
     # Compute the dot product between u and v (≈1 line)
     dot = np.dot(u,v)
     # Compute the L2 norm of u (≈1 line)
@@ -139,7 +139,7 @@ def cosine_similarity(u, v):
     norm_v = np.linalg.norm(v)
     # Compute the cosine similarity defined by formula (1) (≈1 line)
     cosine_similarity = np.divide(dot, np.multiply(norm_u, norm_v))
-    ### END CODE HERE ###
+    
     
     return cosine_similarity
 ```
@@ -223,10 +223,10 @@ def complete_analogy(word_a, word_b, word_c, word_to_vec_map):
     # convert words to lower case
     word_a, word_b, word_c = word_a.lower(), word_b.lower(), word_c.lower()
     
-    ### START CODE HERE ###
+    
     # Get the word embeddings v_a, v_b and v_c (≈1-3 lines)
     e_a, e_b, e_c = word_to_vec_map[word_a], word_to_vec_map[word_b], word_to_vec_map[word_c]
-    ### END CODE HERE ###
+    
     
     words = word_to_vec_map.keys()
     max_cosine_sim = -100              # Initialize max_cosine_sim to a large negative number
@@ -238,7 +238,7 @@ def complete_analogy(word_a, word_b, word_c, word_to_vec_map):
         if w in [word_a, word_b, word_c] :
             continue
         
-        ### START CODE HERE ###
+        
         # Compute cosine similarity between the vector (e_b - e_a) and the vector ((w's vector representation) - e_c)  (≈1 line)
         cosine_sim = cosine_similarity(e_b - e_a, word_to_vec_map[w] - e_c)
         
@@ -247,7 +247,7 @@ def complete_analogy(word_a, word_b, word_c, word_to_vec_map):
         if cosine_sim > max_cosine_sim:
             max_cosine_sim = cosine_sim
             best_word = w
-        ### END CODE HERE ###
+        
         
     return best_word
 ```
@@ -410,7 +410,7 @@ The figure below should help you visualize what neutralizing does. If you're usi
 
 Even though $g_{\perp}$ is 49 dimensional, given the limitations of what we can draw on a screen, we illustrate it using a 1 dimensional axis below. 
 
-<img src="images/neutral.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/neutral.png" style="width:800px;height:300px;">
 <caption><center> **Figure 2**: The word vector for "receptionist" represented before and after applying the neutralize operation. </center></caption>
 
 **Exercise**: Implement `neutralize()` to remove the bias of words such as "receptionist" or "scientist". Given an input embedding $e$, you can use the following formulas to compute $e^{debiased}$: 
@@ -442,7 +442,7 @@ def neutralize(word, g, word_to_vec_map):
         e_debiased -- neutralized word vector representation of the input "word"
     """
     
-    ### START CODE HERE ###
+    
     # Select word vector representation of "word". Use word_to_vec_map. (≈ 1 line)
     e = word_to_vec_map[word]
     
@@ -452,7 +452,7 @@ def neutralize(word, g, word_to_vec_map):
     # Neutralize e by substracting e_biascomponent from it 
     # e_debiased should be equal to its orthogonal projection. (≈ 1 line)
     e_debiased = np.subtract(e, e_biascomponent)
-    ### END CODE HERE ###
+    
     
     return e_debiased
 ```
@@ -497,7 +497,7 @@ Next, lets see how debiasing can also be applied to word pairs such as "actress"
 
 The key idea behind equalization is to make sure that a particular pair of words are equi-distant from the 49-dimensional $g_\perp$. The equalization step also ensures that the two equalized steps are now the same distance from $e_{receptionist}^{debiased}$, or from any other work that has been neutralized. In pictures, this is how equalization works: 
 
-<img src="images/equalize10.png" style="width:800px;height:400px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/equalize10.png" style="width:800px;height:400px;">
 
 
 The derivation of the linear algebra to do this is a bit more complex. (See Bolukbasi et al., 2016 for details.) But the key equations are: 
@@ -542,7 +542,7 @@ def equalize(pair, bias_axis, word_to_vec_map):
     e_2 -- word vector corresponding to the second word
     """
     
-    ### START CODE HERE ###
+    
     # Step 1: Select word vector representation of "word". Use word_to_vec_map. (≈ 2 lines)
     w1, w2 = pair
     e_w1, e_w2 = word_to_vec_map[w1], word_to_vec_map[w2]
@@ -566,7 +566,7 @@ def equalize(pair, bias_axis, word_to_vec_map):
     e1 = corrected_e_w1B + mu_orth
     e2 = corrected_e_w2B + mu_orth
                                                                 
-    ### END CODE HERE ###
+    
     
     return e1, e2
 ```
@@ -637,14 +637,7 @@ cosine similarities after equalizing:
 Please feel free to play with the input words in the cell above, to apply equalization to other pairs of words. 
 
 These debiasing algorithms are very helpful for reducing bias, but are not perfect and do not eliminate all traces of bias. For example, one weakness of this implementation was that the bias direction $g$ was defined using only the pair of words _woman_ and _man_. As discussed earlier, if $g$ were defined by computing $g_1 = e_{woman} - e_{man}$; $g_2 = e_{mother} - e_{father}$; $g_3 = e_{girl} - e_{boy}$; and so on and averaging over them, you would obtain a better estimate of the "gender" dimension in the 50 dimensional word embedding space. Feel free to play with such variants as well.  
-                     
-
-### Congratulations
-
-You have come to the end of this notebook, and have seen a lot of the ways that word vectors can be used as well as  modified. 
-
-Congratulations on finishing this notebook! 
-
+              
 
 **References**:
 - The debiasing algorithm is from Bolukbasi et al., 2016, [Man is to Computer Programmer as Woman is to

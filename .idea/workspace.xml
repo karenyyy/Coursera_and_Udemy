@@ -9,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="" />
+    <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="week2.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="week2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1674">
-                <caret line="93" column="115" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
+              <first_editor relative-caret-position="306">
+                <caret line="17" column="42" lean-forward="true" selection-end-line="95" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operations+on+word+vectors+-+v2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="327">
+                <caret line="639" column="14" selection-end-line="646" />
               </first_editor>
               <second_editor />
             </state>
@@ -70,15 +84,15 @@
       <find>font</find>
       <find>2.7</find>
       <find>grad</find>
-      <find># I.*</find>
+      <find />
       <find>load</find>
-      <find>### [YE].*</find>
+      <find />
       <find>wrapper</find>
       <find>ord2vecCostAndGradient</find>
       <find>\.\./</find>
       <find>img</find>
       <find>src=&quot;</find>
-      <find>### [SE].*</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -133,6 +147,7 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" />
       </list>
     </option>
   </component>
@@ -253,6 +268,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -260,8 +276,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23489933" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23489933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -288,7 +304,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/softmax.py" />
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py" />
     <entry file="file://$PROJECT_DIR$/Projects/img_captioning/keras_utils.py" />
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py" />
@@ -485,8 +500,18 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1674">
-            <caret line="93" column="115" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="42" lean-forward="true" selection-end-line="95" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="327">
+            <caret line="639" column="14" selection-end-line="646" />
           </first_editor>
           <second_editor />
         </state>
