@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="468">
+              <first_editor relative-caret-position="20790">
                 <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
               </first_editor>
               <second_editor />
@@ -45,24 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="week2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md">
+      <file leaf-file-name="Emojify - v2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="306">
-                <caret line="17" column="42" lean-forward="true" selection-end-line="95" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operations+on+word+vectors+-+v2.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="327">
-                <caret line="639" column="14" selection-end-line="646" />
+              <first_editor relative-caret-position="255">
+                <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,18 +70,18 @@
       <find>-</find>
       <find>blue</find>
       <find>purple</find>
-      <find>font</find>
       <find>2.7</find>
       <find>grad</find>
-      <find />
+      <find># I.*</find>
       <find>load</find>
-      <find />
+      <find>### [YE].*</find>
       <find>wrapper</find>
       <find>ord2vecCostAndGradient</find>
-      <find>\.\./</find>
       <find>img</find>
       <find>src=&quot;</find>
-      <find />
+      <find>### [SE].*</find>
+      <find>font</find>
+      <find>\.\./</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -104,8 +93,8 @@
       <replace>src=&quot;https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/images/</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Improving%20Deep%20Neural%20Networks%3A%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization%20Home/</replace>
-      <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/</replace>
       <replace>src=&quot;https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/</replace>
+      <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -148,6 +137,7 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week2.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md" />
       </list>
     </option>
   </component>
@@ -304,7 +294,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/word2vec.py" />
     <entry file="file://$PROJECT_DIR$/Projects/img_captioning/keras_utils.py" />
     <entry file="file://$PROJECT_DIR$/Projects/sentiment_analysis/sentiment.py" />
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Home/md/week2.md" />
@@ -490,8 +479,18 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="468">
+          <first_editor relative-caret-position="20790">
             <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="201">
+            <caret line="200" column="136" selection-start-line="200" selection-start-column="132" selection-end-line="200" selection-end-column="136" />
           </first_editor>
           <second_editor />
         </state>
@@ -507,11 +506,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Operations+on+word+vectors+-+v2.md">
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="639" column="14" selection-end-line="646" />
+          <first_editor relative-caret-position="255">
+            <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>

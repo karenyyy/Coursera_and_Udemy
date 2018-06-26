@@ -31,7 +31,7 @@ You have a tiny dataset (X, Y) where:
 - X contains 127 sentences (strings)
 - Y contains a integer label between 0 and 4 corresponding to an emoji for each sentence
 
-<img src="images/data_set.png" style="width:700px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/data_set.png" style="width:700px;height:300px;">
 <caption><center> **Figure 1**: EMOJISET - a classification problem with 5 classes. A few examples of sentences are given here. </center></caption>
 
 Let's load the dataset using the code below. We split the dataset between training (127 examples) and testing (56 examples).
@@ -63,7 +63,7 @@ print(X_train[index], label_to_emoji(Y_train[index]))
 In this part, you are going to implement a baseline model called "Emojifier-v1".  
 
 <center>
-<img src="images/image_1.png" style="width:900px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/image_1.png" style="width:900px;height:300px;">
 <caption><center> **Figure 2**: Baseline model (Emojifier-V1).</center></caption>
 </center>
 
@@ -140,7 +140,7 @@ def sentence_to_avg(sentence, word_to_vec_map):
     avg -- average vector encoding information about the sentence, numpy-array of shape (50,)
     """
     
-    ### START CODE HERE ###
+    
     # Step 1: Split sentence into list of lower case words (≈ 1 line)
     words = [i.lower() for i in sentence.split()]
 
@@ -152,7 +152,7 @@ def sentence_to_avg(sentence, word_to_vec_map):
         avg += word_to_vec_map[w]
     avg = avg / len(words)
     
-    ### END CODE HERE ###
+    
     
     return avg
 ```
@@ -247,7 +247,7 @@ def model(X, Y, word_to_vec_map, learning_rate = 0.01, num_iterations = 400):
     for t in range(num_iterations):                       # Loop over the number of iterations
         for i in range(m):                                # Loop over the training examples
             
-            ### START CODE HERE ### (≈ 4 lines of code)
+            
             # Average the word vectors of the words from the i'th training example
             avg = sentence_to_avg(X[i], word_to_vec_map)
 
@@ -257,7 +257,7 @@ def model(X, Y, word_to_vec_map, learning_rate = 0.01, num_iterations = 400):
 
             # Compute cost using the i'th training label's one hot representation and "A" (the output of the softmax)
             cost = -np.sum(np.multiply(Y_oh[i], np.log(a)))
-            ### END CODE HERE ###
+            
             
             # Compute gradients 
             dz = a - Y_oh[i]
@@ -612,7 +612,6 @@ plot_confusion_matrix(Y_test, pred_test)
 ![png](output_34_1.png)
 
 
-<font color='blue'>
 **What you should remember from this part**:
 - Even with a 127 training examples, you can get a reasonably good model for Emojifying. This is due to the generalization power word vectors gives you. 
 - Emojify-V1 will perform poorly on sentences such as *"This movie is not good and not enjoyable"* because it doesn't understand combinations of words--it just averages all the words' embedding vectors together, without paying attention to the ordering of words. You will build a better algorithm in the next part. 
@@ -643,7 +642,7 @@ np.random.seed(1)
 
 Here is the Emojifier-v2 you will implement:
 
-<img src="images/emojifier-v2.png" style="width:700px;height:400px;"> <br>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/emojifier-v2.png" style="width:700px;height:400px;"> <br>
 <caption><center> **Figure 3**: Emojifier-V2. A 2-layer LSTM sequence classifier. </center></caption>
 
 
@@ -661,7 +660,7 @@ In Keras, the embedding matrix is represented as a "layer", and maps positive in
 
 The `Embedding()` layer takes an integer matrix of size (batch size, max input length) as input. This corresponds to sentences converted into lists of indices (integers), as shown in the figure below.
 
-<img src="images/embedding1.png" style="width:700px;height:250px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/embedding1.png" style="width:700px;height:250px;">
 <caption><center> **Figure 4**: Embedding layer. This example shows the propagation of two examples through the embedding layer. Both have been zero-padded to a length of `max_len=5`. The final dimension of the representation is  `(2,max_len,50)` because the word embeddings we are using are 50 dimensional. </center></caption>
 
 The largest integer (i.e. word index) in the input should be no larger than the vocabulary size. The layer outputs an array of shape (batch size, max input length, dimension of word vectors).
@@ -690,7 +689,7 @@ def sentences_to_indices(X, word_to_index, max_len):
     
     m = X.shape[0]                                   # number of training examples
     
-    ### START CODE HERE ###
+    
     # Initialize X_indices as a numpy matrix of zeros and the correct shape (≈ 1 line)
     X_indices = np.zeros((m, max_len))
     
@@ -709,7 +708,7 @@ def sentences_to_indices(X, word_to_index, max_len):
             # Increment j to j + 1
             j += 1
             
-    ### END CODE HERE ###
+    
     
     return X_indices
 ```
@@ -780,7 +779,7 @@ def pretrained_embedding_layer(word_to_vec_map, word_to_index):
     vocab_len = len(word_to_index) + 1                  # adding 1 to fit Keras embedding (requirement)
     emb_dim = word_to_vec_map["cucumber"].shape[0]      # define dimensionality of your GloVe word vectors (= 50)
     
-    ### START CODE HERE ###
+    
     # Initialize the embedding matrix as a numpy array of zeros of shape (vocab_len, dimensions of word vectors = emb_dim)
     emb_matrix = np.zeros((vocab_len, emb_dim))
     
@@ -790,7 +789,7 @@ def pretrained_embedding_layer(word_to_vec_map, word_to_index):
 
     # Define Keras embedding layer with the correct output/input sizes, make it trainable. Use Embedding(...). Make sure to set trainable=False. 
     embedding_layer = Embedding(vocab_len, emb_dim, trainable=False)
-    ### END CODE HERE ###
+    
 
     # Build the embedding layer, it is required before setting the weights of the embedding layer. Do not modify the "None".
     embedding_layer.build((None,))
@@ -827,7 +826,7 @@ print("weights[0][1][3] =", embedding_layer.get_weights()[0][1][3])
 
 Lets now build the Emojifier-V2 model. You will do so using the embedding layer you have built, and feed its output to an LSTM network. 
 
-<img src="images/emojifier-v2.png" style="width:700px;height:400px;"> <br>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/emojifier-v2.png" style="width:700px;height:400px;"> <br>
 <caption><center> **Figure 3**: Emojifier-v2. A 2-layer LSTM sequence classifier. </center></caption>
 
 
@@ -850,7 +849,7 @@ def Emojify_V2(input_shape, word_to_vec_map, word_to_index):
     model -- a model instance in Keras
     """
     
-    ### START CODE HERE ###
+    
     # Define sentence_indices as the input of the graph, it should be of shape input_shape and dtype 'int32' (as it contains indices).
     sentence_indices = Input(input_shape, dtype='int32')
     
@@ -878,7 +877,7 @@ def Emojify_V2(input_shape, word_to_vec_map, word_to_index):
     # Create Model instance which converts sentence_indices into X.
     model = Model(inputs=sentence_indices, outputs=X)
     
-    ### END CODE HERE ###
+    
     
     return model
 ```
@@ -1110,7 +1109,7 @@ Previously, Emojify-V1 model did not correctly label "not feeling happy," but ou
 
 You have completed this notebook! ❤️❤️❤️
 
-<font color='blue'>
+
 **What you should remember**:
 - If you have an NLP task where the training set is small, using word embeddings can help your algorithm significantly. Word embeddings allow your model to work on words in the test set that may not even have appeared in your training set. 
 - Training sequence models in Keras (and in most other deep learning frameworks) requires a few important details:
@@ -1119,19 +1118,7 @@ You have completed this notebook! ❤️❤️❤️
     - `LSTM()` has a flag called `return_sequences` to decide if you would like to return every hidden states or only the last one. 
     - You can use `Dropout()` right after `LSTM()` to regularize your network. 
 
-
-Congratulations on finishing this assignment and building an Emojifier. We hope you're happy with what you've accomplished in this notebook! 
-
-# 😀😀😀😀😀😀
-
-
-
-
-## Acknowledgments
-
-Thanks to Alison Darcy and the Woebot team for their advice on the creation of this assignment. Woebot is a chatbot friend that is ready to speak with you 24/7. As part of Woebot's technology, it uses word embeddings to understand the emotions of what you say. You can play with it by going to http://woebot.io
-
-<img src="images/woebot.png" style="width:600px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/woebot.png" style="width:600px;height:300px;">
 
 
 
