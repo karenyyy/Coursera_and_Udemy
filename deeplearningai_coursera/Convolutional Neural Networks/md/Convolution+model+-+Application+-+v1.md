@@ -45,7 +45,7 @@ X_train_orig, Y_train_orig, X_test_orig, Y_test_orig, classes = load_dataset()
 
 As a reminder, the SIGNS dataset is a collection of 6 signs representing numbers from 0 to 5.
 
-<img src="../../images/SIGNS.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/SIGNS.png" style="width:800px;height:300px;">
 
 The next cell will show you an example of a labelled image in the dataset. Feel free to change the value of `index` below and re-run to see different examples. 
 
@@ -61,7 +61,7 @@ print ("y = " + str(np.squeeze(Y_train_orig[:, index])))
 
 
 
-![png](output_6_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/application/output_6_1.png)
 
 
 In Course 2, you had built a fully-connected network for this dataset. But since this is an image dataset, it is more natural to apply a ConvNet to it.
@@ -569,7 +569,7 @@ _, _, parameters = model(X_train, Y_train, X_test, Y_test)
 
 
 
-![png](output_28_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/application/output_28_1.png)
 
 
     Tensor("Mean_1:0", shape=(), dtype=float32)
@@ -618,26 +618,4 @@ _, _, parameters = model(X_train, Y_train, X_test, Y_test)
     </td> 
 </tr> 
 </table>
-
-Congratulations! You have finised the assignment and built a model that recognizes SIGN language with almost 80% accuracy on the test set. If you wish, feel free to play around with this dataset further. You can actually improve its accuracy by spending more time tuning the hyperparameters, or using regularization (as this model clearly has a high variance). 
-
-Once again, here's a thumbs up for your work! 
-
-
-```python
-fname = "../images/thumbs_up.jpg"
-image = np.array(ndimage.imread(fname, flatten=False))
-my_image = scipy.misc.imresize(image, size=(64,64))
-plt.imshow(my_image)
-```
-
-
-
-
-    <matplotlib.image.AxesImage at 0x7fba8e8b12b0>
-
-
-
-
-![png](output_31_1.png)
 

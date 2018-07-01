@@ -62,7 +62,7 @@ You will be implementing the building blocks of a convolutional neural network! 
     
 This notebook will ask you to implement these functions from scratch in `numpy`. In the next notebook, you will use the TensorFlow equivalents of these functions to build the following model:
 
-<img src="images/model.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/model.png" style="width:800px;height:300px;">
 
 **Note** that for every forward function, there is its corresponding backward equivalent. Hence, at every step of your forward module you will store some parameters in a cache. These parameters are used to compute gradients during backpropagation. 
 
@@ -70,7 +70,7 @@ This notebook will ask you to implement these functions from scratch in `numpy`.
 
 Although programming frameworks make convolutions easy to use, they remain one of the hardest concepts to understand in Deep Learning. A convolution layer transforms an input volume into an output volume of different size, as shown below. 
 
-<img src="images/conv_nn.png" style="width:350px;height:200px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/conv_nn.png" style="width:350px;height:200px;">
 
 In this part, you will build every step of the convolution layer. You will first implement two helper functions: one for zero padding and the other for computing the convolution function itself. 
 
@@ -78,8 +78,8 @@ In this part, you will build every step of the convolution layer. You will first
 
 Zero-padding adds zeros around the border of an image:
 
-<img src="images/PAD.png" style="width:600px;height:400px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u><font color='purple'>  : **Zero-Padding**<br> Image (3 channels, RGB) with a padding of 2. </center></caption>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/PAD.png" style="width:600px;height:400px;">
+<caption><center> <u>  **Figure 1** </u>  : **Zero-Padding**<br> Image (3 channels, RGB) with a padding of 2. </center></caption>
 
 The main benefits of padding are the following:
 
@@ -109,9 +109,9 @@ def zero_pad(X, pad):
     X_pad -- padded image of shape (m, n_H + 2*pad, n_W + 2*pad, n_C)
     """
     
-    ### START CODE HERE ### (≈ 1 line)
+    
     X_pad = np.pad(X, ((0, 0), (pad, pad), (pad, pad), (0, 0)), 'constant', constant_values=0)
-    ### END CODE HERE ###
+    
     
     return X_pad
 ```
@@ -155,7 +155,7 @@ axarr[1].imshow(x_pad[0,:,:,0])
 
 
 
-![png](output_7_2.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/step/output_7_2.png)
 
 
 **Expected Output**:
@@ -212,8 +212,8 @@ In this part, implement a single step of convolution, in which you apply the fil
 - Applies a filter at every position of the input
 - Outputs another volume (usually of different size)
 
-<img src="images/Convolution_schematic.gif" style="width:500px;height:300px;">
-<caption><center> <u> <font color='purple'> **Figure 2** </u><font color='purple'>  : **Convolution operation**<br> with a filter of 2x2 and a stride of 1 (stride = amount you move the window each time you slide) </center></caption>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/Convolution_schematic.gif" style="width:500px;height:300px;">
+<caption><center> <u> **Figure 2** </u>  : **Convolution operation**<br> with a filter of 2x2 and a stride of 1 (stride = amount you move the window each time you slide) </center></caption>
 
 In a computer vision application, each value in the matrix on the left corresponds to a single pixel value, and we convolve a 3x3 filter with the image by multiplying its values element-wise with the original matrix, then summing them up. In this first step of the exercise, you will implement a single step of convolution, corresponding to applying a filter to just one of the positions to get a single real-valued output. 
 
@@ -240,12 +240,12 @@ def conv_single_step(a_slice_prev, W, b):
     Z -- a scalar value, result of convolving the sliding window (W, b) on a slice x of the input data
     """
 
-    ### START CODE HERE ### (≈ 2 lines of code)
+    
     # Element-wise product between a_slice and W. Add bias.
     s = np.multiply(a_slice_prev, W) + b
     # Sum over all entries of the volume s
     Z = np.sum(s)
-    ### END CODE HERE ###
+    
 
     return Z
 ```
@@ -282,7 +282,7 @@ print("Z =", Z)
 In the forward pass, you will take many filters and convolve them on the input. Each 'convolution' gives you a 2D matrix output. You will then stack these outputs to get a 3D volume: 
 
 <center>
-<video width="620" height="440" src="../images/conv_kiank.mp4" type="video/mp4" controls>
+<video width="620" height="440" src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/../images/conv_kiank.mp4" type="video/mp4" controls>
 </video>
 </center>
 
@@ -296,8 +296,8 @@ a_slice_prev = a_prev[0:2,0:2,:]
 This will be useful when you will define `a_slice_prev` below, using the `start/end` indexes you will define.
 2. To define a_slice you will need to first define its corners `vert_start`, `vert_end`, `horiz_start` and `horiz_end`. This figure may be helpful for you to find how each of the corner can be defined using h, w, f and s in the code below.
 
-<img src="../images/vert_horiz_kiank.png" style="width:400px;height:300px;">
-<caption><center> <u> <font color='purple'> **Figure 3** </u><font color='purple'>  : **Definition of a slice using vertical and horizontal start/end (with a 2x2 filter)** <br> This figure shows only a single channel.  </center></caption>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/../images/vert_horiz_kiank.png" style="width:400px;height:300px;">
+<caption><center> <u> **Figure 3** </u>  : **Definition of a slice using vertical and horizontal start/end (with a 2x2 filter)** <br> This figure shows only a single channel.  </center></caption>
 
 
 **Reminder**:
@@ -327,7 +327,7 @@ def conv_forward(A_prev, W, b, hparameters):
     cache -- cache of values needed for the conv_backward() function
     """
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from A_prev's shape (≈1 line)  
     (m, n_H_prev, n_W_prev, n_C_prev) = A_prev.shape
     
@@ -363,7 +363,7 @@ def conv_forward(A_prev, W, b, hparameters):
                     # Convolve the (3D) slice with the correct filter W and bias b, to get back one output neuron. (≈1 line)
                     Z[i, h, w, c] = conv_single_step(a_slice_prev, W[...,c], b[...,c])
                                         
-    ### END CODE HERE ###
+    
 
     # Making sure your output shape is correct
     assert(Z.shape == (m, n_H, n_W, n_C))
@@ -437,11 +437,11 @@ The pooling (POOL) layer reduces the height and width of the input. It helps red
 
 <table>
 <td>
-<img src="images/max_pool1.png" style="width:500px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/max_pool1.png" style="width:500px;height:300px;">
 <td>
 
 <td>
-<img src="images/a_pool.png" style="width:500px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/a_pool.png" style="width:500px;height:300px;">
 <td>
 </table>
 
@@ -491,7 +491,7 @@ def pool_forward(A_prev, hparameters, mode = "max"):
     # Initialize output matrix A
     A = np.zeros((m, n_H, n_W, n_C))              
     
-    ### START CODE HERE ###
+    
     for i in range(m):                           # loop over the training examples
         for h in range(n_H):                     # loop on the vertical axis of the output volume
             for w in range(n_W):                 # loop on the horizontal axis of the output volume
@@ -512,7 +512,7 @@ def pool_forward(A_prev, hparameters, mode = "max"):
                     elif mode == "average":
                         A[i, h, w, c] = np.mean(a_prev_slice)
     
-    ### END CODE HERE ###
+    
     
     # Store the input and hparameters in "cache" for pool_backward()
     cache = (A_prev, hparameters)
@@ -656,7 +656,7 @@ def conv_backward(dZ, cache):
           numpy array of shape (1, 1, 1, n_C)
     """
     
-    ### START CODE HERE ###
+    
     # Retrieve information from "cache"
     (A_prev, W, b, hparameters) = cache
     
@@ -708,7 +708,7 @@ def conv_backward(dZ, cache):
                     
         # Set the ith training example's dA_prev to the unpaded da_prev_pad (Hint: use X[pad:-pad, pad:-pad, :])
         dA_prev[i, :, :, :] = da_prev_pad[pad:-pad, pad:-pad, :]
-    ### END CODE HERE ###
+    
     
     # Making sure your output shape is correct
     assert(dA_prev.shape == (m, n_H_prev, n_W_prev, n_C_prev))
@@ -802,9 +802,9 @@ def create_mask_from_window(x):
     mask -- Array of the same shape as window, contains a True at the position corresponding to the max entry of x.
     """
     
-    ### START CODE HERE ### (≈1 line)
+    
     mask = x == np.max(x)
-    ### END CODE HERE ###
+    
     
     return mask
 ```
@@ -884,7 +884,7 @@ def distribute_value(dz, shape):
     a -- Array of size (n_H, n_W) for which we distributed the value of dz
     """
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from shape (≈1 line)
     (n_H, n_W) = shape
     
@@ -893,7 +893,7 @@ def distribute_value(dz, shape):
     
     # Create a matrix where every entry is the "average" value (≈1 line)
     a = np.ones(shape) * average
-    ### END CODE HERE ###
+    
     
     return a
 ```
@@ -945,7 +945,7 @@ def pool_backward(dA, cache, mode = "max"):
     dA_prev -- gradient of cost with respect to the input of the pooling layer, same shape as A_prev
     """
     
-    ### START CODE HERE ###
+    
     
     # Retrieve information from cache (≈1 line)
     (A_prev, hparameters) = cache
@@ -990,7 +990,7 @@ def pool_backward(dA, cache, mode = "max"):
                         # Distribute it to get the correct slice of dA_prev. i.e. Add the distributed value of da. (≈1 line)
                         dA_prev[i, vert_start:vert_end, horiz_start:horiz_end, c] += distribute_value(da, shape)
                         
-    ### END CODE ###
+    
     
     # Making sure your output shape is correct
     assert(dA_prev.shape == A_prev.shape)
@@ -1085,7 +1085,3 @@ mode = average
 </td>
 </tr>
 </table>
-
-### Congratulations !
-
-Congratulation on completing this assignment. You now understand how convolutional neural networks work. You have implemented all the building blocks of a neural network. In the next assignment you will implement a ConvNet using TensorFlow.
