@@ -1,26 +1,25 @@
-
 ### Intro to NLP
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/1.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/1.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/2.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/2.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/3.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/3.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/4.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/4.png)
 
 
 ### Applications of NLP
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/5.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/5.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/6.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/6.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/7.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/7.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/8.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/8.png)
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/9.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/9.png)
 
 ### word2vec
 
@@ -34,7 +33,7 @@ print([_ for _ in panda.closure(lambda x: x.hypernyms())]) # closure used as app
     [Synset('procyonid.n.01'), Synset('carnivore.n.01'), Synset('placental.n.01'), Synset('mammal.n.01'), Synset('vertebrate.n.01'), Synset('chordate.n.01'), Synset('animal.n.01'), Synset('organism.n.01'), Synset('living_thing.n.01'), Synset('whole.n.02'), Synset('object.n.01'), Synset('physical_entity.n.01'), Synset('entity.n.01')]
 
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/10.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/10.png)
 
 - Since we can not calculate the word similarities using one-hot vectors
 
@@ -64,7 +63,7 @@ where we will:
     - hierarchial softmax
     - negative sampling
     
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/11.png)
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/11.png)
 
 
 ### Details of word2vec
@@ -83,6 +82,4 @@ $$\text{ where } \theta \text{ represents all variables we will optimize } $$
 
 $$p(o \mid c) = \frac{exp (u_o^T v_c)}{\sum^v_{w=1} exp(u_w^T v_c)}, \text{ where o: outside, c: center}$$
 
-![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images/12.png)
-
-
+![](https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images/12.png)

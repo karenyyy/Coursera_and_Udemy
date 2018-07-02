@@ -5,13 +5,13 @@
 
 #### AlexNet
 
-![](../images/35.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/35.png)
 
 ### Difference between language model and machine translation
 
-![](../images/36.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/36.png)
 
-![](../images/37.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/37.png)
 
 ### Beam Search
  
@@ -21,11 +21,11 @@
 
 After picking 3 most likely words for the first word:
 
-![](../images/38.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/38.png)
 
 > Beam search: combination of greedy search? greedy at each step
 
-![](../images/39.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/39.png)
 
 
 ### Refinements to Beam Search
@@ -51,21 +51,21 @@ $$\frac{1}{T_y^\alpha} \:\:\: \prod^{T_y}_{t=1}\log P(y^{<t>} \mid x, y^{<1>}, y
 
 ### Error Analysis of beam search
 
-![](../images/40.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/40.png)
 
 ### Bleu Score (Bilingual evaluation)
 
 #### Unigram
 
-![](../images/41.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/41.png)
 
 $$\text{ modified precision }\frac{\text{ occurence of the word in the original sentence}}{\text{ occurence of the word in the translation output}}$$
 
 #### Bigram
 
-![](../images/42.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/42.png)
 
-![](../images/43.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/43.png)
 
 $$p_n = \text{ Bleu score on n-grams only }$$
 
@@ -79,19 +79,19 @@ $$\text{If MT_output_length }\le \text { reference_output_length, }$$
 
 $$BP = \exp (1- \frac{MT_output_length }{reference_output_length})$$
 
-![](../images/44.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/44.png)
 
-![](../images/45.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/45.png)
 
-![](../images/46.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/46.png)
 
-![](../images/47.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/47.png)
 
 
 $$\text{ Compute attention } \alpha ^{<t, t'>\text{ the amount of attention } y^{<t>} should pay to } a^{t'} $$
 
 $$\alpha ^{<t, t'>} = \frac{\exp (e^{<t, t'>})}{\sum^{T_x}_{t' = 1}\exp (e^{t, t'})}$$
 
-![](../images/48.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/48.png)
 
 
