@@ -32,7 +32,8 @@ After picking 3 most likely words for the first word:
 
 #### Length normalization
 
-$$\arg \max \prod^{T_y}_{t=1} P(y^{<t>} \mid x, y^{<1>}, y^{<2>}, ..., y^{<t-1>})$$
+
+$$\arg \max \prod ^{T_y}_{t=1} P(y^{<t>} \mid x, y^{<1>}, y^{<2>}, ..., y^{<t-1>})$$
 
 $$ P( y^{<1>}, y^{<2>}, ..., y^{<t>} \mid x) = P(y^{<1>} \mid x) P(y^{<2>} \mid x, y^{<1>}) P(y^{<3>} \mid x, y^{<1>}, y^{<2>})... P(y^{<t>} \mid x, y^{<1>}, y^{<2>}, ..., y^{<t-1>}) $$
 

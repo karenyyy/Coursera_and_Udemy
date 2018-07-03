@@ -10,9 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" beforeDir="false" afterPath="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP_coursera+stanford224n/nmt_with_attention.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NLP_coursera+stanford224n/nmt_with_attention.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/.ipynb_checkpoints/week2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/.ipynb_checkpoints/week2-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/week2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/week2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Neural_machine_translation_with_attention_v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Neural_machine_translation_with_attention_v2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/Neural_machine_translation_with_attention_v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/notebooks/Neural_machine_translation_with_attention_v2.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +79,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="232">
-                <caret line="1074" column="5" lean-forward="true" selection-start-line="1074" selection-start-column="5" selection-end-line="1074" selection-end-column="5" />
+                <caret line="1074" column="5" selection-start-line="1074" selection-start-column="5" selection-end-line="1074" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -88,7 +91,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="360">
-                <caret line="607" column="10" lean-forward="true" selection-end-line="621" />
+                <caret line="607" column="10" selection-end-line="621" />
               </first_editor>
               <second_editor />
             </state>
@@ -100,31 +103,31 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="178">
-                <caret line="68" column="23" lean-forward="true" selection-end-line="84" selection-end-column="122" />
+                <caret line="68" column="23" selection-end-line="84" selection-end-column="122" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="week3.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="week3.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="250">
-                <caret line="26" lean-forward="true" selection-end-line="97" />
+              <first_editor relative-caret-position="412">
+                <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neural_machine_translation_with_attention_v2.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Neural_machine_translation_with_attention_v2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Neural_machine_translation_with_attention_v2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1168">
-                <caret line="671" column="43" selection-start-line="671" selection-start-column="43" selection-end-line="671" selection-end-column="43" />
+              <first_editor relative-caret-position="196">
+                <caret line="828" column="9" selection-end-line="843" />
               </first_editor>
               <second_editor />
             </state>
@@ -144,18 +147,19 @@
       <find>purple</find>
       <find>2.7</find>
       <find>grad</find>
-      <find># I.*</find>
+      <find />
       <find>load</find>
-      <find>### [YE].*</find>
+      <find />
       <find>wrapper</find>
       <find>ord2vecCostAndGradient</find>
-      <find>### [SE].*</find>
+      <find />
       <find>font</find>
       <find>output_</find>
       <find>src=&quot;</find>
       <find>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images</find>
       <find>\.\./</find>
       <find>img</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -172,6 +176,7 @@
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/application/output_</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Advanced_ML_HSE/master/Bayesian_Methods_for_Machine_Learning/images</replace>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -217,8 +222,8 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Convolution model - Step by Step - v1.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Convolution+model+-+Application+-+v1.md" />
         <option value="$PROJECT_DIR$/NLP_coursera+stanford224n/cs224n/md/Lecture 1,2.md" />
-        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Neural_machine_translation_with_attention_v2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md" />
       </list>
     </option>
   </component>
@@ -231,7 +236,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1335" />
     <option name="y" value="155" />
     <option name="width" value="1079" />
@@ -624,7 +629,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="232">
-            <caret line="1074" column="5" lean-forward="true" selection-start-line="1074" selection-start-column="5" selection-end-line="1074" selection-end-column="5" />
+            <caret line="1074" column="5" selection-start-line="1074" selection-start-column="5" selection-end-line="1074" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
@@ -634,7 +639,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="360">
-            <caret line="607" column="10" lean-forward="true" selection-end-line="621" />
+            <caret line="607" column="10" selection-end-line="621" />
           </first_editor>
           <second_editor />
         </state>
@@ -644,17 +649,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="178">
-            <caret line="68" column="23" lean-forward="true" selection-end-line="84" selection-end-column="122" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="250">
-            <caret line="26" lean-forward="true" selection-end-line="97" />
+            <caret line="68" column="23" selection-end-line="84" selection-end-column="122" />
           </first_editor>
           <second_editor />
         </state>
@@ -663,8 +658,18 @@
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Neural_machine_translation_with_attention_v2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1168">
-            <caret line="671" column="43" selection-start-line="671" selection-start-column="43" selection-end-line="671" selection-end-column="43" />
+          <first_editor relative-caret-position="196">
+            <caret line="828" column="9" selection-end-line="843" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="412">
+            <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
           </first_editor>
           <second_editor />
         </state>

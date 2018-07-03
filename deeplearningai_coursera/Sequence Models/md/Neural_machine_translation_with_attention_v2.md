@@ -835,7 +835,7 @@ attention_map = plot_attention_map(model, human_vocab, inv_machine_vocab, "Tuesd
 
 
 
-![png](output_41_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Sequence%20Models/images/output_41_1.png)
 
 
 On the generated plot you can observe the values of the attention weights for each character of the predicted output. Examine this plot and check that where the network is paying attention makes sense to you.
