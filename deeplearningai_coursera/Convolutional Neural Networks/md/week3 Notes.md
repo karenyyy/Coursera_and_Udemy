@@ -8,13 +8,13 @@
 
 
 
-![](../images/30.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/30.png)
 
 
 ### Sliding windows
 
 
-![](../images/31.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/31.png)
 
 
 
@@ -25,7 +25,7 @@
 
 - yellow area
     
-![](../images/32.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/32.png)
 
 
 $$IOU = \frac{size \: of \: yellow \: area}{size \: of \: green \: area} $$ 
@@ -43,7 +43,7 @@ $$better \: with \: 0.6 \: or \: 0.7$$
 - Note: recall sth irrelevant: 
     - Precision and Recall
     
-![](../images/33.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/33.png)
 
 
 #### Non-max suppression
@@ -58,7 +58,7 @@ __Non-max is a way to make sure that the algorithm detects each object only once
 
 possible problems
 
-![](../images/34.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/34.png)
 
 - it first looks at the probabilities associated with  
 each of these detections
@@ -67,7 +67,7 @@ each of these detections
 - then __the Non-max suppression part__ looks at all of the remaining rectangles and all the ones with a high overlap
     - for instance: pick out 0.9, suppress 0.6, 0.7; pick out 0.9, suppress 0.7;
 
-![](../images/35.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/35.png)
     
 
 
@@ -80,7 +80,7 @@ __Use Anchor boxes__
 
 - Overlapping objects
 
-![](../images/36.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/36.png)
 
 - Previously
 
@@ -90,21 +90,21 @@ Each object in training image is assigned to grid cell that contains that object
 
 Each object in training image is assigned to a grid cell that contains object's midpoint and anchor box for the grid cell with highest IoU
 
-![](../images/37.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/37.png)
  
 
 > how do you choose anchor boxes?
 
 An advanced way to do this is to use K-means to group together 2 types of objects shapes you tend to get, and then use that to select a set of anchor boxes.
 
-![](../images/38.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/38.png)
 
 
 - 3x3: using a 3x3 grid cell, like using sliding window and get 3x3
 - 2: anchor boxes
 - 8: output classes
 
-![](../images/39.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/39.png)
 
 
 
@@ -112,16 +112,16 @@ An advanced way to do this is to use K-means to group together 2 types of object
 
 - For each grid cell, get 2 predicted bounding boxes
 
-![](../images/40.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/40.png)
 
 ____
 - Next get rid of low probability predictions
 
-![](../images/41.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/41.png)
 ____
 - For each class (pedestrian, car, motorcycle) use non-max suppression to generate final predictions
 
-![](../images/42.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/42.png)
 
 
 
@@ -136,11 +136,11 @@ ____
 
 __the region proposals is to run an algorithm called a segmentation algorithm, run CNN on blobs found__
 
-![](../images/44.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/44.png)
 
-![](../images/43.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/43.png)
 
-![](../images/45.png)
+![](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/45.png)
 
 
 Summary:
