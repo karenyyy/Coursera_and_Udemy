@@ -408,7 +408,7 @@ print(happyModel.predict(x))
 
 
 
-![png](output_21_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/output_21_1.png)
 
 
 ## 5 - Other useful functions in Keras (Optional)
@@ -433,6 +433,6 @@ SVG(model_to_dot(happyModel).create(prog='dot', format='svg'))
 
 
 
-![svg](output_24_0.svg)
+![svg](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/output_24_0.svg)
 
 
