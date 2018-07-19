@@ -56,8 +56,8 @@ np.set_printoptions(threshold=np.nan)
 
 In Face Verification, you're given two images and you have to tell if they are of the same person. The simplest way to do this is to compare the two images pixel-by-pixel. If the distance between the raw images are less than a chosen threshold, it may be the same person! 
 
-<img src="images/pixel_comparison.png" style="width:380px;height:150px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u></center></caption>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/pixel_comparison.png" style="width:380px;height:150px;">
+<caption><center> <u>  **Figure 1** </u></center></caption>
 
 Of course, this algorithm performs really poorly, __since the pixel values change dramatically due to variations in lighting, orientation of the person's face, even minor changes in head position, and so on.__ 
 
@@ -100,8 +100,8 @@ Total Params: 3743280
 
 By using a 128-neuron fully connected layer as its last layer, the model ensures that the output is an encoding vector of size 128. You then use the encodings the compare two face images as follows:
 
-<img src="images/distance_kiank.png" style="width:680px;height:250px;">
-<caption><center> <u> <font color='purple'> **Figure 2**: <br> </u> <font color='purple'> By computing a distance between two encodings and thresholding, you can determine if the two pictures represent the same person</center></caption>
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/distance_kiank.png" style="width:680px;height:250px;">
+<caption><center> <u> **Figure 2**: <br> </u> By computing a distance between two encodings and thresholding, you can determine if the two pictures represent the same person</center></caption>
 
 So, an encoding is a good one if: 
 - The encodings of two images of the same person are quite similar to each other 
@@ -109,9 +109,9 @@ So, an encoding is a good one if:
 
 The triplet loss function formalizes this, and tries to "push" the encodings of two images of the same person (Anchor and Positive) closer together, while "pulling" the encodings of two images of different persons (Anchor, Negative) further apart. 
 
-<img src="images/triplet_comparison.png" style="width:280px;height:150px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/triplet_comparison.png" style="width:280px;height:150px;">
 <br>
-<caption><center> <u> <font color='purple'> **Figure 3**: <br> </u> <font color='purple'> In the next part, we will call the pictures from left to right: Anchor (A), Positive (P), Negative (N)  </center></caption>
+<caption><center> <u>  **Figure 3**: <br> </u>  In the next part, we will call the pictures from left to right: Anchor (A), Positive (P), Negative (N)  </center></caption>
 
 
 
@@ -119,7 +119,7 @@ The triplet loss function formalizes this, and tries to "push" the encodings of 
 
 For an image $x$, we denote its encoding $f(x)$, where $f$ is the function computed by the neural network.
 
-<img src="images/f_x.png" style="width:380px;height:150px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/f_x.png" style="width:380px;height:150px;">
 
 <!--
 We will also add a normalization step at the end of our model so that $\mid \mid f(x) \mid \mid_2 = 1$ (means the vector of encoding should be of norm 1).
@@ -181,7 +181,7 @@ def triplet_loss(y_true, y_pred, alpha = 0.2):
     
     anchor, positive, negative = y_pred[0], y_pred[1], y_pred[2]
     
-    ### START CODE HERE ### (≈ 4 lines)
+    
     # Step 1: Compute the (encoding) distance between the anchor and the positive, you will need to sum over axis=-1
     pos_dist = tf.reduce_sum(tf.squared_difference(anchor,positive), axis=-1)
     # Step 2: Compute the (encoding) distance between the anchor and the negative, you will need to sum over axis=-1
@@ -190,7 +190,7 @@ def triplet_loss(y_true, y_pred, alpha = 0.2):
     basic_loss = pos_dist-neg_dist+alpha
     # Step 4: Take the maximum of basic_loss and 0.0. Sum over the training examples.
     loss = tf.reduce_sum(tf.maximum(basic_loss, 0))
-    ### END CODE HERE ###
+    
     
     return loss
 ```
@@ -237,9 +237,9 @@ load_weights_from_FaceNet(FRmodel)
 
 Here're some examples of distances between the encodings between three individuals:
 
-<img src="images/distance_matrix.png" style="width:380px;height:200px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/distance_matrix.png" style="width:380px;height:200px;">
 <br>
-<caption><center> <u> <font color='purple'> **Figure 4**:</u> <br>  <font color='purple'> Example of distance outputs between three individuals' encodings</center></caption>
+<caption><center> <u>**Figure 4**:</u> <br>  Example of distance outputs between three individuals' encodings</center></caption>
 
 Let's now use this model to perform face verification and face recognition! 
 
@@ -302,7 +302,7 @@ def verify(image_path, identity, database, model):
     door_open -- True, if the door should open. False otherwise.
     """
     
-    ### START CODE HERE ###
+    
     
     # Step 1: Compute the encoding for the image. Use img_to_encoding() see example above. (≈ 1 line)
     encoding = img_to_encoding(image_path, model)
@@ -318,14 +318,14 @@ def verify(image_path, identity, database, model):
         print("It's not " + str(identity) + ", please go away")
         door_open = False
         
-    ### END CODE HERE ###
+    
         
     return dist, door_open
 ```
 
 Younes is trying to enter the Happy House and the camera takes a picture of him ("images/camera_0.jpg"). Let's run your verification algorithm on this picture:
 
-<img src="images/camera_0.jpg" style="width:100px;height:100px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/camera_0.jpg" style="width:100px;height:100px;">
 
 
 ```python
@@ -357,7 +357,7 @@ verify("images/camera_0.jpg", "younes", database, FRmodel)
 </table>
 
 Benoit, who broke the aquarium last weekend, has been banned from the house and removed from the database. He stole Kian's ID card and came back to the house to try to present himself as Kian. The front-door camera took a picture of Benoit ("images/camera_2.jpg). Let's run the verification algorithm to check if benoit can enter.
-<img src="images/camera_2.jpg" style="width:100px;height:100px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/camera_2.jpg" style="width:100px;height:100px;">
 
 
 ```python
@@ -422,7 +422,7 @@ def who_is_it(image_path, database, model):
     identity -- string, the name prediction for the person on image_path
     """
     
-    ### START CODE HERE ### 
+    
     
     ## Step 1: Compute the target "encoding" for the image. Use img_to_encoding() see example above. ## (≈ 1 line)
     encoding = img_to_encoding(image_path, model)
@@ -443,7 +443,7 @@ def who_is_it(image_path, database, model):
             min_dist = dist
             identity = name
 
-    ### END CODE HERE ###
+    
     
     if min_dist > 0.7:
         print("Not in the database.")
@@ -495,13 +495,12 @@ Although we won't implement it here, here're some ways to further improve the al
 - Crop the images to just contain the face, and less of the "border" region around the face. This preprocessing removes some of the irrelevant pixels around the face, and also makes the algorithm more robust.
 
 
-<font color='blue'>
 **What you should remember**:
 - Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem. 
 - The triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
 - The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person. 
 
-Congrats on finishing this assignment! 
+
 
 
 ### References:

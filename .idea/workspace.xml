@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0e1d9c-23a1-44fd-abc6-7588cd28d6f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/notebooks/Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Art+Generation+with+Neural+Style+Transfer+-+v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Art+Generation+with+Neural+Style+Transfer+-+v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Face+Recognition+for+the+Happy+House+-+v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Face+Recognition+for+the+Happy+House+-+v3.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,42 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Emojify - v2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/Emojify - v2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="972">
-                <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/week1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1728">
-                <caret line="96" selection-start-line="96" selection-end-line="96" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Convolution model - Step by Step - v1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Convolution model - Step by Step - v1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="19332">
-                <caret line="1074" column="5" selection-start-line="1074" selection-start-column="5" selection-end-line="1074" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Convolution+model+-+Application+-+v1.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Convolution+model+-+Application+-+v1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -106,12 +70,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Another YOLO in tensorflow.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Another YOLO in tensorflow.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Another YOLO in tensorflow.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="360">
                 <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="week4_notes.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/week4_notes.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="399">
+                <caret line="81" lean-forward="true" selection-end-line="250" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Art+Generation+with+Neural+Style+Transfer+-+v2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Art+Generation+with+Neural+Style+Transfer+-+v2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="318">
+                <caret line="786" lean-forward="true" selection-end-line="798" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Face+Recognition+for+the+Happy+House+-+v3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Face+Recognition+for+the+Happy+House+-+v3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="18">
+                <caret line="16" selection-start-line="16" selection-end-line="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -163,9 +163,11 @@
       <find>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/NLP_coursera%2Bstanford224n/Bayesian_Methods_for_Machine_Learning/images</find>
       <find>\.\./</find>
       <find>img</find>
-      <find>font</find>
       <find>\.\./images</find>
       <find>output_</find>
+      <find>CONG</find>
+      <find>font</find>
+      <find>final</find>
     </findStrings>
     <replaceStrings>
       <replace>https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/images/week2/output_</replace>
@@ -234,6 +236,8 @@
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Sequence Models/md/week3.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/week3 Notes.md" />
         <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Keras+-+Tutorial+-+Happy+House+v2.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Face+Recognition+for+the+Happy+House+-+v3.md" />
+        <option value="$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Art+Generation+with+Neural+Style+Transfer+-+v2.md" />
       </list>
     </option>
   </component>
@@ -369,8 +373,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22057264" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22057264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14739583" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -397,9 +401,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/course_1/Deep+Neural+Network+-+Application+v3.ipynb" />
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/assignment/Neural Networks and Deep Learning/Deep Neural Network - Application.ipynb" />
-    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/notebooks/Week2.ipynb" />
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/cs231+cs229 basic NN.ipynb" />
     <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Neural_Networks_and_Deep_Learning/md/Week2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -671,6 +672,36 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="360">
             <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/week4_notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="81" lean-forward="true" selection-end-line="250" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Face+Recognition+for+the+Happy+House+-+v3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeplearningai_coursera/Convolutional Neural Networks/md/Art+Generation+with+Neural+Style+Transfer+-+v2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="318">
+            <caret line="786" lean-forward="true" selection-end-line="798" />
           </first_editor>
           <second_editor />
         </state>

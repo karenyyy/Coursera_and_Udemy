@@ -30,7 +30,7 @@ import tensorflow as tf
 Neural Style Transfer (NST) is one of the most fun techniques in deep learning. As seen below, it merges two images, namely, a "content" image (C) and a "style" image (S), to create a "generated" image (G). The generated image G combines the "content" of the image C with the "style" of image S. 
 
 In this example, you are going to generate an image of the Louvre museum in Paris (content image C), mixed with a painting by Claude Monet, a leader of the impressionist movement (style image S).
-<img src="images/louvre_generated.png" style="width:750px;height:200px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/louvre_generated.png" style="width:750px;height:200px;">
 
 Let's see how you can do this. 
 
@@ -86,7 +86,7 @@ imshow(content_image)
 
 
 
-![png](output_7_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/output_7_1.png)
 
 
 The content image (C) shows the Louvre museum's pyramid surrounded by old Paris buildings, against a sunny sky with a few clouds.
@@ -103,7 +103,7 @@ $$J_{content}(C,G) =  \frac{1}{4 \times n_H \times n_W \times n_C}\sum _{ \text{
 
 Here, $n_H, n_W$ and $n_C$ are the height, width and number of channels of the hidden layer you have chosen, and appear in a normalization term in the cost. For clarity, note that $a^{(C)}$ and $a^{(G)}$ are the volumes corresponding to a hidden layer's activations. In order to compute the cost $J_{content}(C,G)$, it might also be convenient to unroll these 3D volumes into a 2D matrix, as shown below. (Technically this unrolling step isn't needed to compute $J_{content}$, but it will be good practice for when you do need to carry out a similar operation later for computing the style const $J_{style}$.)
 
-<img src="images/NST_LOSS.png" style="width:800px;height:400px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/NST_LOSS.png" style="width:800px;height:400px;">
 
 **Exercise:** Compute the "content cost" using TensorFlow. 
 
@@ -131,7 +131,7 @@ def compute_content_cost(a_C, a_G):
     J_content -- scalar that you compute using equation 1 above.
     """
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from a_G (≈1 line)
     m, n_H, n_W, n_C = a_G.get_shape().as_list()
     
@@ -141,7 +141,7 @@ def compute_content_cost(a_C, a_G):
     
     # compute the cost with tensorflow (≈1 line)
     J_content = tf.divide(1, 4*n_H*n_W*n_C)*tf.reduce_sum(tf.squared_difference(a_C,a_G))
-    ### END CODE HERE ###
+    
     
     return J_content
 ```
@@ -175,7 +175,7 @@ with tf.Session() as test:
 
 </table>
 
-<font color='blue'>
+
 **What you should remember**:
 - The content cost takes a hidden layer activation of the neural network, and measures how different $a^{(C)}$ and $a^{(G)}$ are. 
 - When we minimize the content cost later, this will help make sure $G$ has similar content as $C$.
@@ -198,7 +198,7 @@ imshow(style_image)
 
 
 
-![png](output_14_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/output_14_1.png)
 
 
 This painting was painted in the style of *[impressionism](https://en.wikipedia.org/wiki/Impressionism)*.
@@ -213,7 +213,7 @@ Note that there is an unfortunate collision in the variable names used here. We 
 
 In NST, you can compute the Style matrix by multiplying the "unrolled" filter matrix with their transpose:
 
-<img src="images/NST_GM.png" style="width:900px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/NST_GM.png" style="width:900px;height:300px;">
 
 __The result is a matrix of dimension $(n_C,n_C)$ where $n_C$ is the number of filters. The value $G_{ij}$ measures how similar the activations of filter $i$ are to the activations of filter $j$.__
 
@@ -237,9 +237,9 @@ def gram_matrix(A):
     GA -- Gram matrix of A, of shape (n_C, n_C)
     """
     
-    ### START CODE HERE ### (≈1 line)
+    
     GA = tf.matmul(A, A, transpose_b=True)
-    ### END CODE HERE ###
+    
     
     return GA
 ```
@@ -311,7 +311,7 @@ def compute_layer_style_cost(a_S, a_G):
     J_style_layer -- tensor representing a scalar value, style cost defined above by equation (2)
     """
     
-    ### START CODE HERE ###
+    
     # Retrieve dimensions from a_G (≈1 line)
     m, n_H, n_W, n_C = a_G.get_shape().as_list()
     
@@ -326,7 +326,7 @@ def compute_layer_style_cost(a_S, a_G):
     # Computing the loss (≈1 line)
     J_style_layer = tf.divide(1, (2*n_H*n_W*n_C)**2)*tf.reduce_sum(tf.squared_difference(GS, GG))
     
-    ### END CODE HERE ###
+    
     
     return J_style_layer
 ```
@@ -442,12 +442,10 @@ def compute_style_cost(model, STYLE_LAYERS):
 How do you choose the coefficients for each layer? The deeper layers capture higher-level concepts, and the features in the deeper layers are less localized in the image relative to each other. So if you want the generated image to softly follow the style image, try choosing larger weights for deeper layers and smaller weights for the first layers. In contrast, if you want the generated image to strongly follow the style image, try choosing smaller weights for deeper layers and larger weights for the first layers
 !-->
 
-
-<font color='blue'>
 **What you should remember**:
 - The style of an image can be represented using the Gram matrix of a hidden layer's activations. However, we get even better results combining this representation from multiple different layers. This is in contrast to the content representation, where usually using just a single hidden layer is sufficient.
 - Minimizing the style cost will cause the image $G$ to follow the style of the image $S$. 
-</font color='blue'>
+
 
 
 
@@ -477,9 +475,9 @@ def total_cost(J_content, J_style, alpha = 10, beta = 40):
     J -- total cost as defined by the formula above.
     """
     
-    ### START CODE HERE ### (≈1 line)
+    
     J = alpha * J_content + beta * J_style
-    ### END CODE HERE ###
+    
     
     return J
 ```
@@ -513,7 +511,6 @@ with tf.Session() as test:
 
 </table>
 
-<font color='blue'>
 **What you should remember**:
 - The total cost is a linear combination of the content cost $J_{content}(C,G)$ and the style cost $J_{style}(S,G)$
 - $\alpha$ and $\beta$ are hyperparameters that control the relative weighting between content and style
@@ -524,7 +521,7 @@ Finally, let's put everything together to implement Neural Style Transfer!
 
 
 Here's what the program will have to do:
-<font color='purple'>
+
 
 1. Create an Interactive Session
 2. Load the content image 
@@ -538,7 +535,7 @@ Here's what the program will have to do:
     - Define the optimizer and the learning rate
 8. Initialize the TensorFlow graph and run it for a large number of iterations, updating the generated image at every step.
 
-</font>
+
 Lets go through the individual steps in detail. 
 
 You've previously implemented the overall cost $J(G)$. We'll now set up TensorFlow to optimize this with respect to $G$. To do so, your program has to reset the graph and use an "[Interactive Session](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)". Unlike a regular session, the "Interactive Session" installs itself as the default session to build a graph.  This allows you to run variables without constantly needing to refer to the session object, which simplifies the code.  
@@ -586,7 +583,7 @@ imshow(generated_image[0])
 
 
 
-![png](output_47_1.png)
+![png](https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/output_47_1.png)
 
 
 Next, as explained in part (2), let's load the VGG16 model.
@@ -638,9 +635,9 @@ J_style = compute_style_cost(model, STYLE_LAYERS)
 
 
 ```python
-### START CODE HERE ### (1 line)
+
 J = total_cost(J_content, J_style, alpha=10, beta=40)
-### END CODE HERE ###
+
 ```
 
 You'd previously learned how to set up the Adam optimizer in TensorFlow. Lets do that here, using a learning rate of 2.0.  [See reference](https://www.tensorflow.org/api_docs/python/tf/train/AdamOptimizer)
@@ -661,26 +658,26 @@ train_step = optimizer.minimize(J)
 def model_nn(sess, input_image, num_iterations = 200):
     
     # Initialize global variables (you need to run the session on the initializer)
-    ### START CODE HERE ### (1 line)
+    
     sess.run(tf.global_variables_initializer())
-    ### END CODE HERE ###
+    
     
     # Run the noisy input image (initial generated image) through the model. Use assign().
-    ### START CODE HERE ### (1 line)
+    
     model['input'].assign(input_image)
-    ### END CODE HERE ###
+    
     
     for i in range(num_iterations):
     
         # Run the session on the train_step to minimize the total cost
-        ### START CODE HERE ### (1 line)
+        
         sess.run(train_step)
-        ### END CODE HERE ###
+        
         
         # Compute the generated image by running the session on the current model['input']
-        ### START CODE HERE ### (1 line)
+        
         generated_image = sess.run(model['input'])
-        ### END CODE HERE ###
+        
 
         # Print every 20 iteration.
         if i%20 == 0:
@@ -736,20 +733,20 @@ You're done! After running this, in the upper bar of the notebook click on "File
 
 You should see something the image presented below on the right:
 
-<img src="images/louvre_generated.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/louvre_generated.png" style="width:800px;height:300px;">
 
 We didn't want you to wait too long to see an initial result, and so had set the hyperparameters accordingly. To get the best looking results, running the optimization algorithm longer (and perhaps with a smaller learning rate) might work better. After completing and submitting this assignment, we encourage you to come back and play more with this notebook, and see if you can generate even better looking images. 
 
 Here are few other examples:
 
 - The beautiful ruins of the ancient city of Persepolis (Iran) with the style of Van Gogh (The Starry Night)
-<img src="images/perspolis_vangogh.png" style="width:750px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/perspolis_vangogh.png" style="width:750px;height:300px;">
 
 - The tomb of Cyrus the great in Pasargadae with the style of a Ceramic Kashi from Ispahan.
-<img src="images/pasargad_kashi.png" style="width:750px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/pasargad_kashi.png" style="width:750px;height:300px;">
 
 - A scientific study of a turbulent fluid with the style of a abstract blue fluid painting.
-<img src="images/circle_abstract.png" style="width:750px;height:300px;">
+<img src="https://raw.githubusercontent.com/karenyyy/Coursera_and_Udemy/master/deeplearningai_coursera/Convolutional%20Neural%20Networks/images/circle_abstract.png" style="width:750px;height:300px;">
 
 ## 5 - Test with your own image (Optional/Ungraded)
 
@@ -780,18 +777,13 @@ You can also tune your hyperparameters:
 
 Great job on completing this assignment! You are now able to use Neural Style Transfer to generate artistic images. This is also your first time building a model in which the optimization algorithm updates the pixel values rather than the neural network's parameters. Deep learning has many different types of models and this is only one of them! 
 
-<font color='blue'>
+
 What you should remember:
 - Neural Style Transfer is an algorithm that given a content image C and a style image S can generate an artistic image
 - It uses representations (hidden layer activations) based on a pretrained ConvNet. 
 - The content cost function is computed using one hidden layer's activations.
 - The style cost function for one layer is computed using the Gram matrix of that layer's activations. The overall style cost function is obtained using several hidden layers.
 - Optimizing the total cost function results in synthesizing new images. 
-
-
-
-
-This was the final programming exercise of this course. Congratulations--you've finished all the programming exercises of this course on Convolutional Networks! We hope to also see you in Course 5, on Sequence models! 
 
 
 ### References:
